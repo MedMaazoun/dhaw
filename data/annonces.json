@@ -1,6 +1,43 @@
 {
- "generated_at": "2026-07-22T20:52:49+01:00",
+ "generated_at": "2026-07-22T22:10:13+01:00",
  "items": [
+  {
+   "date": "2026-07-21",
+   "start": "12:00",
+   "end": "22:00",
+   "type": "Délestage tournant",
+   "titre": "Délestage : La STEG publie une nouvelle liste de zones potentiellement concernées ce mardi",
+   "zones": "ariana, beni khalled, bou argoub, douar hicher, el alia, el haouaria, el mida, el mourouj, ettadhamen, ezzahra, fouchana, hammam lif, hammamet, kelibia, la marsa, la soukra, mateur, megrine, menzel bouzelfa, menzel temime, rades, tinja, zaghouan",
+   "ids": [
+    "TN15C",
+    "TN155",
+    "TN15D",
+    "TN142",
+    "TN159",
+    "TN15F",
+    "TN133",
+    "TN134",
+    "TN126",
+    "TN122",
+    "TN161",
+    "TN13B",
+    "TN15G",
+    "TN11L",
+    "TN156",
+    "TN137",
+    "TN17D",
+    "TN139",
+    "TN157",
+    "TN176",
+    "TN121",
+    "TN138",
+    "TN179"
+   ],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/delestage-la-steg-publie-une-nouvelle-liste-de-zones-potentiellement-concernees-ce-mardi/401410/",
+   "via": "scraper",
+   "fetched_at": "2026-07-22T22:10:13+01:00"
+  },
   {
    "date": "2026-07-22",
    "start": "00:00",
@@ -302,19 +339,6 @@
    "ids": [],
    "source": "Webdo",
    "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-la-justice-ouvre-des-enquetes-dans-plusieurs-regions/401445/",
-   "via": "scraper",
-   "fetched_at": "2026-07-22T16:47:37+01:00"
-  },
-  {
-   "date": "2026-07-21",
-   "start": "13:00",
-   "end": "17:00",
-   "type": "Coupure programmée",
-   "titre": "Alors que les coupures se multiplient, le PDG de la STEG appelle les citoyens à la rationalisation de la conso",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/alors-que-les-coupures-se-multiplient-le-pdg-de-la-steg-appelle-les-citoyens-a-la-rationalisation-de-la-consommation/401415/",
    "via": "scraper",
    "fetched_at": "2026-07-22T16:47:37+01:00"
   }

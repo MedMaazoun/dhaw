@@ -182,6 +182,9 @@ def run() -> int:
                     print(f"[warn] article {url}: {e}", file=sys.stderr)
             start, end = extract_times(body) or (None, None)
             ids, found = match_zones(body)
+            # sûreté : sans horaire explicite, on liste l'info mais on ne colore pas la carte
+            if start is None:
+                ids, found = [], []
             kind = ("Délestage tournant" if re.search(r"délestage|delestage|tournant", body, re.I)
                     else "Coupure programmée")
             new_items.append({

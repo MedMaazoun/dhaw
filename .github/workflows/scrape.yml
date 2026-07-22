@@ -1,0 +1,49 @@
+name: Scraper annonces STEG
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # toutes les 10 minutes
+  workflow_dispatch:          # bouton "Run workflow" manuel
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r scraper/requirements.txt
+
+      - name: Lancer le scraper
+        run: python scraper/scrape.py
+
+      - name: Committer si les annonces ont changé
+        id: commit
+        run: |
+          git config user.name  "dhaw-bot"
+          git config user.email "actions@github.com"
+          git add data/annonces.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Aucun changement."
+          else
+            git commit -m "🤖 MAJ annonces STEG $(date -u +'%Y-%m-%d %H:%M')"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Reconstruire GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          curl -s -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/pages/builds

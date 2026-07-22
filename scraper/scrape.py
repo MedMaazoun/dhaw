@@ -180,6 +180,10 @@ def run() -> int:
                     body = title + " " + article_text(url)
                 except Exception as e:
                     print(f"[warn] article {url}: {e}", file=sys.stderr)
+            # on coupe avant les blocs "articles liés" pour ne pas matcher leurs zones
+            body = re.split(r"Lire aussi|À lire aussi|A lire aussi|Articles? similaires?"
+                            r"|Sur le même sujet|Les plus récents|Les plus populaires",
+                            body, 1)[0]
             start, end = extract_times(body) or (None, None)
             ids, found = match_zones(body)
             # sûreté : sans horaire explicite, on liste l'info mais on ne colore pas la carte

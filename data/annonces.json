@@ -1,0 +1,52 @@
+{
+ "generated_at": "2026-07-22T16:22:40+01:00",
+ "items": [
+  {
+   "date": "2026-07-22",
+   "start": "10:00",
+   "end": "16:00",
+   "type": "Délestage tournant",
+   "titre": "Grand Tunis, Ariana & Manouba — coupures tournantes",
+   "zones": "El Menzah 1–9, El Manar 1–2, Aïn Zaghouan, Jardins de Carthage, Ksar Saïd, Le Kram, La Goulette, Tebourba, Jedaida, Sidi Thabet, Borj Ettouil",
+   "ids": [
+    "TN118",
+    "TN11L",
+    "TN111",
+    "TN141",
+    "TN11K",
+    "TN11J",
+    "TN147",
+    "TN146",
+    "TN125"
+   ],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/grand-tunis-la-steg-etend-les-coupures-delectricite-a-de-nouvelles-zones-ce-mercredi/401451/",
+   "via": "seed"
+  },
+  {
+   "date": "2026-07-22",
+   "start": "10:00",
+   "end": "16:00",
+   "type": "Délestage tournant",
+   "titre": "Cap Bon (gouvernorat de Nabeul)",
+   "zones": "Korba, Dar Chaâbane, Béni Khiar, El Maâmoura, Grombalia, El Haouaria, Kélibia, Hammam Ghzez, Hammamet, Menzel Bouzelfa, Menzel Temime, Soliman, Takelsa, Aïn Kmicha",
+   "ids": [
+    "TN154",
+    "TN152",
+    "TN153",
+    "TN15E",
+    "TN159",
+    "TN157",
+    "TN158",
+    "TN15G",
+    "TN15C",
+    "TN155",
+    "TN15B",
+    "TN15A"
+   ],
+   "source": "Tuniscope",
+   "url": "https://www.tuniscope.com/article/436738/actualites/tunisie/steg-153013",
+   "via": "seed"
+  }
+ ]
+}

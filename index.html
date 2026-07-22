@@ -66,6 +66,11 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offs
 .dchip.on{border-color:var(--amber);color:var(--amber);background:#1c1607}
 .sathint{pointer-events:none;display:none;font-size:.68rem;color:#cdd6ea;background:rgba(13,20,40,.85);border:1px solid var(--line);border-radius:8px;padding:6px 9px;max-width:340px;line-height:1.45}
 .sathint.show{display:block}
+.pvbar{pointer-events:auto;display:none;align-items:center;gap:10px;background:#1c1607;border:1px solid #6a5327;border-radius:10px;padding:8px 11px;box-shadow:0 4px 18px rgba(0,0,0,.45);max-width:520px}
+.pvbar.show{display:flex}
+.pvtxt{font-size:.7rem;line-height:1.35;color:#ffd9a0;min-width:0}
+.pvtxt b{display:block;color:var(--amber);font-family:var(--disp);font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pvbar button{flex:none;width:28px;height:28px;border-radius:8px;border:1px solid #6a5327;color:var(--amber);font-size:.8rem}
 .btn-loc{position:absolute;right:10px;bottom:126px;z-index:1000;width:40px;height:40px;border-radius:10px;background:rgba(13,20,40,.92);border:1px solid var(--line2);color:var(--txt);font-size:1rem;box-shadow:0 4px 14px rgba(0,0,0,.4)}
 .legend{position:absolute;left:10px;bottom:12px;z-index:1000;display:flex;flex-wrap:wrap;gap:6px;max-width:70%}
 .lg{display:flex;align-items:center;gap:6px;font-size:.66rem;color:#cdd6ea;background:rgba(13,20,40,.88);border:1px solid var(--line);border-radius:999px;padding:4px 9px}
@@ -104,6 +109,9 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offs
 .gen-meta{font-family:var(--mono);font-size:.62rem;color:var(--mut);margin-top:10px;line-height:1.5}
 .sec{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:14px 0 7px}
 .it{display:flex;gap:9px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #1b2545;font-size:.78rem;line-height:1.45}
+.it.click{cursor:pointer;transition:background .15s;border-radius:8px}
+.it.click:hover{background:#182449}
+.it.click:active{background:#1d2c59}
 .it:last-child{border-bottom:none}
 .it .dot{margin-top:5px}
 .it .t{font-family:var(--mono);font-size:.66rem;color:var(--mut);margin-left:auto;white-space:nowrap;padding-left:8px}
@@ -172,10 +180,15 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offs
     </div>
     <div class="dates" id="dates"></div>
     <div class="sathint" id="sathint">Lumières nocturnes <b>NASA VIIRS</b> (~500 m, image vers 01h30). Zones sombres = éclairage absent → possible coupure. Attention : les nuages assombrissent aussi l'image.</div>
+    <div class="pvbar" id="pvbar">
+      <div class="pvtxt"><b id="pvTitle"></b><span id="pvMeta"></span></div>
+      <button id="pvClose" aria-label="Fermer l'aperçu">✕</button>
+    </div>
   </div>
   <button class="btn-loc" id="btnLoc" aria-label="Ma position">◎</button>
   <div class="legend">
     <span class="lg"><i style="background:var(--sched)"></i>Annonce STEG en cours</span>
+    <span class="lg"><i style="background:transparent;border:1.5px dashed var(--sched);box-sizing:border-box"></i>Annoncée · à venir</span>
     <span class="lg"><i style="background:var(--red)"></i>Coupure signalée</span>
     <span class="lg"><i style="background:var(--ok)"></i>Courant rétabli</span>
     <span class="lg"><i style="background:#3a4a75"></i>Aucun signalement</span>
@@ -225,7 +238,7 @@ const SB = (CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY)
   ? { u: CFG.SUPABASE_URL.replace(/\/+$/,''), k: CFG.SUPABASE_ANON_KEY } : null;
 
 const state = { deleg:null, byId:{}, reports:[], announce:[], generatedAt:null,
-                layerMode:'map', satDate:null, sbWarned:false };
+                layerMode:'map', satDate:null, sbWarned:false, preview:null };
 
 const fmtH = d => new Date(d).toLocaleTimeString('fr-TN',{hour:'2-digit',minute:'2-digit'});
 function esc(s){ return String(s||'').replace(/[<>&"]/g, c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c])); }
@@ -255,16 +268,37 @@ function latestEvent(id, now){
   if(best.k==='back' && now-best.t < BACK_TTL) return best;
   return null;
 }
+function nextAnnFor(id, now){
+  let best=null, bs=Infinity;
+  for(const a of state.announce){
+    if(!a.ids || !a.ids.includes(id)) continue;
+    const [s]=annBounds(a);
+    if(now<s && s-now<24*3600e3 && s<bs){ best=a; bs=s; }
+  }
+  return best;
+}
 function statusOf(id, now){
   const ev = latestEvent(id, now);
   if(ev) return ev.k==='out' ? 'out' : 'back';
   if(activeAnnFor(id, now)) return 'sched';
+  if(nextAnnFor(id, now)) return 'next';
   return 'none';
 }
 const COLORS = {out:'#FF4D3D', sched:'#F5A524', back:'#2FBF8F', none:'#3a4a75'};
 function styleOf(id){
-  const st = statusOf(id, Date.now());
+  const now = Date.now();
+  if(state.preview){
+    const inSel = state.preview.ids && state.preview.ids.includes(id);
+    return inSel
+      ? {color:'#FFD9A0', weight:2, fillColor:'#FFB454', fillOpacity:.55, opacity:1}
+      : {color:'#0B1122', weight:.5, fillColor:'#3a4a75', fillOpacity:.05, opacity:.6};
+  }
+  const st = statusOf(id, now);
   const sat = state.layerMode==='sat';
+  if(st==='next'){
+    return {color:'#F5A524', weight:1.1, dashArray:'4 3',
+            fillColor:'#F5A524', fillOpacity: sat? .1 : .15, opacity:.85};
+  }
   const fillOp = st==='none' ? (sat? .03 : .22) : (sat? .34 : {out:.62,sched:.5,back:.42}[st]);
   return { color: sat? '#5a6b9c' : '#0B1122', weight: sat? .5 : .8,
            fillColor: COLORS[st], fillOpacity: fillOp, opacity: sat? .5 : .9 };
@@ -287,6 +321,7 @@ map.setView([34.1, 9.6], 6);
 const ST_LABEL = {
   out:  ['st-out','Coupure signalée'],
   sched:['st-sched','Annonce STEG en cours'],
+  next: ['st-sched','Coupure annoncée · à venir'],
   back: ['st-back','Courant rétabli'],
   none: ['st-none','Aucun signalement']
 };
@@ -294,16 +329,16 @@ function openPopup(p, layer){
   const now = Date.now();
   const st = statusOf(p.id, now);
   const ev = latestEvent(p.id, now);
-  const ann = activeAnnFor(p.id, now) || state.announce.find(a=>a.ids&&a.ids.includes(p.id));
   let html = '<div class="pp-name">'+esc(p.fr)+'<span class="ar">'+esc(p.ar)+'</span></div>'
     + '<div class="pp-gov">Gouvernorat de '+esc(p.gv)+' · '+esc(p.gvar)+'</div>'
     + '<span class="pp-st '+ST_LABEL[st][0]+'"><i></i>'+ST_LABEL[st][1]+'</span>';
   if(ev) html += '<div class="pp-note">Dernier signalement à '+fmtH(ev.t)+'.</div>';
-  if(ann){
-    const [s,e]=annBounds(ann);
-    html += '<div class="pp-note">🗓 STEG : '+esc(ann.type)+' '+fmtH(s)+' → '+fmtH(e)
-      + (now>e?' (terminé)':'')
-      + (ann.url?'<br>Source : <a href="'+esc(ann.url)+'" target="_blank" rel="noopener">'+esc(ann.source||'article')+' ↗</a>':'')+'</div>';
+  const anns = state.announce.filter(a=>a.ids&&a.ids.includes(p.id)).slice(0,3);
+  for(const a of anns){
+    const [s,e]=annBounds(a);
+    const tag = (now>=s&&now<=e)?'EN COURS':(now<s?'À VENIR':'terminée');
+    html += '<div class="pp-note">🗓 '+tag+' · '+esc(a.type)+' '+fmtH(s)+' → '+fmtH(e)
+      + (a.url?' · <a href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.source||'source')+' ↗</a>':'')+'</div>';
   }
   html += '<div class="pp-btns">'
     + '<button class="b-out" onclick="DHAW.report(\''+p.id+'\',\'out\')">⚡ Signaler une coupure</button>'
@@ -351,7 +386,37 @@ async function report(id, kind){
       body: JSON.stringify({deleg_id:id, kind})});
   }catch(e){ console.warn('insert:', e); }
 }
-window.DHAW = { report };
+window.DHAW = { report, preview, closePreview };
+
+/* ---------- aperçu annonce ↔ carte ---------- */
+function preview(i){
+  const a = state.announce[i];
+  if(!a) return;
+  if(!a.ids || !a.ids.length) return toast('Zones non cartographiées pour cette annonce — voir la source ↗');
+  state.preview = a;
+  const [s,e]=annBounds(a);
+  $('pvTitle').textContent = a.titre || 'Annonce STEG';
+  $('pvMeta').textContent = a.ids.length+' délégations · '+fmtH(s)+' → '+fmtH(e)+' · '+(a.source||'');
+  $('pvbar').classList.add('show');
+  $('sheet').classList.add('closed');
+  $('sheetH').setAttribute('aria-expanded','false');
+  setTimeout(()=>map.invalidateSize(),260);
+  let b=null;
+  if(gj) gj.eachLayer(l=>{
+    if(a.ids.includes(l.feature.properties.id)){
+      b = b ? b.extend(l.getBounds()) : L.latLngBounds(l.getBounds().getSouthWest(), l.getBounds().getNorthEast());
+    }
+  });
+  if(b) setTimeout(()=>map.fitBounds(b,{padding:[36,36]}),300);
+  render();
+}
+function closePreview(){
+  state.preview = null;
+  $('pvbar').classList.remove('show');
+  if(gj) map.fitBounds(gj.getBounds(),{padding:[8,8]});
+  render();
+}
+$('pvClose').onclick = closePreview;
 
 /* ---------- rendu ---------- */
 function render(){
@@ -365,13 +430,16 @@ function render(){
   $('nOut').textContent=nOut; $('nBack').textContent=nBack; $('nSched').textContent=nSched;
   $('trace').classList.toggle('alert', nOut>=3 || nSched>=15);
 
-  $('listSched').innerHTML = state.announce.map(a=>{
+  $('listSched').innerHTML = state.announce.map((a,i)=>{
     const [s,e]=annBounds(a); const live = now>=s&&now<=e; const done = now>e;
     const b = live?'<span class="badge live">EN COURS</span>':done?'<span class="badge done">TERMINÉE</span>':'<span class="badge next">À VENIR</span>';
     const w = a.via==='scraper'?'<span class="badge web">AUTO</span>':'';
-    return '<div class="it"><span class="dot s"></span><div><b>'+esc(a.titre)+'</b>'+b+w
+    const hasIds = a.ids && a.ids.length;
+    const zchip = hasIds?'<span class="badge web">🗺 '+a.ids.length+' zones · voir</span>':'';
+    return '<div class="it'+(hasIds?' click':'')+'"'+(hasIds?' onclick="DHAW.preview('+i+')" role="button" tabindex="0"':'')+'>'
+      +'<span class="dot s"></span><div><b>'+esc(a.titre)+'</b>'+b+w+zchip
       +'<div class="sub">'+esc(a.type)+' · '+fmtH(s)+' → '+fmtH(e)
-      +(a.url?' · <a class="lk" href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.source||'source')+' ↗</a>':'')+'</div>'
+      +(a.url?' · <a class="lk" href="'+esc(a.url)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+esc(a.source||'source')+' ↗</a>':'')+'</div>'
       +(a.zones?'<div class="zones">'+esc(a.zones)+'</div>':'')
       +'</div></div>';
   }).join('') || '<div class="empty">Aucune annonce récente. Le robot vérifie toutes les 10 minutes.</div>';
@@ -385,7 +453,8 @@ function render(){
   }).join('') : '<div class="empty">Aucun signalement pour l\'instant. Touchez une délégation sur la carte pour signaler une coupure.</div>';
 
   const nowAct = state.announce.filter(a=>{const [s,e]=annBounds(a);return now>=s&&now<=e;}).length;
-  $('sheetN').textContent = '('+nowAct+' en cours · '+feed.length+' signalements)';
+  const nowNext = state.announce.filter(a=>{const [s]=annBounds(a);return now<s&&s-now<24*3600e3;}).length;
+  $('sheetN').textContent = '('+nowAct+' en cours · '+nowNext+' à venir · '+feed.length+' signalements)';
   $('genMeta').textContent = 'Annonces actualisées automatiquement toutes les 10 min (GitHub Actions)'
     + (state.generatedAt ? ' · dernière génération : '
        + new Date(state.generatedAt).toLocaleString('fr-TN',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}) : '')

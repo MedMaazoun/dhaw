@@ -1,6 +1,45 @@
 {
- "generated_at": "2026-07-22T16:47:37+01:00",
+ "generated_at": "2026-07-22T18:00:39+01:00",
  "items": [
+  {
+   "date": "2026-07-22",
+   "start": "18:00",
+   "end": "22:00",
+   "type": "Délestage tournant",
+   "titre": "STEG : liste des zones concernées par les coupures d’électricité ce soir dans toute la Tunisie",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/22/steg-liste-des-zones-concernees-par-les-coupures-delectricite-ce-soir-dans-toute-la-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-07-22T18:00:39+01:00"
+  },
+  {
+   "date": "2026-07-22",
+   "start": "18:00",
+   "end": "22:00",
+   "type": "Délestage tournant",
+   "titre": "Grand Tunis : Voici les zones concernées par les coupures d’électricité ce soir",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/22/grand-tunis-voici-les-zones-concernees-par-les-coupures-delectricite-ce-soir/",
+   "via": "scraper",
+   "fetched_at": "2026-07-22T18:00:39+01:00"
+  },
+  {
+   "date": "2026-07-22",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Que faire en cas de court-circuit électrique? La Protection civile publie le guide d’urgence",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/22/que-faire-en-cas-de-court-circuit-electrique-la-protection-civile-publie-le-guide-durgence/",
+   "via": "scraper",
+   "fetched_at": "2026-07-22T18:00:39+01:00"
+  },
   {
    "date": "2026-07-22",
    "start": "10:00",

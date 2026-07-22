@@ -29,7 +29,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = DATA / "annonces.json"
 
-UA = {"User-Agent": "Mozilla/5.0 (compatible; DhawBot/1.0; +https://github.com/)"}
+UA = {"User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                     "AppleWebKit/537.36 (KHTML, like Gecko) "
+                     "Chrome/126.0.0.0 Safari/537.36"),
+      "Accept-Language": "fr-FR,fr;q=0.9,ar;q=0.8"}
 TIMEOUT = 20
 
 # ---------------------------------------------------------------- sources RSS
@@ -122,6 +125,16 @@ def article_text(url: str) -> str:
     node = soup.find("article") or soup.find("main") or soup.body or soup
     return re.sub(r"\s+", " ", node.get_text(" ", strip=True))
 
+def entry_body(entry) -> str:
+    """Texte le plus complet disponible dans le flux RSS lui-même
+    (les flux WordPress incluent souvent l'article entier en content:encoded)."""
+    parts = []
+    for c in entry.get("content", []) or []:
+        parts.append(c.get("value", ""))
+    parts.append(entry.get("summary", ""))
+    txt = BeautifulSoup(" ".join(parts), "html.parser").get_text(" ", strip=True)
+    return re.sub(r"\s+", " ", txt)
+
 # ------------------------------------------------------------------ pipeline
 def run() -> int:
     now = datetime.now(TZ)
@@ -160,12 +173,13 @@ def run() -> int:
                 pub_dt = now
             if pub_dt < horizon:
                 continue
-            # article complet → horaires + zones
-            try:
-                body = article_text(url)
-            except Exception as e:
-                print(f"[warn] article {url}: {e}", file=sys.stderr)
-                body = head
+            # texte : flux RSS d'abord, page article si le flux est tronqué
+            body = title + " " + entry_body(entry)
+            if len(body) < 400:
+                try:
+                    body = title + " " + article_text(url)
+                except Exception as e:
+                    print(f"[warn] article {url}: {e}", file=sys.stderr)
             start, end = extract_times(body) or (None, None)
             ids, found = match_zones(body)
             kind = ("Délestage tournant" if re.search(r"délestage|delestage|tournant", body, re.I)

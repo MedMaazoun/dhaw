@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhaw ضو — Coupures d'électricité en Tunisie</title>
+<meta name="description" content="Carte en temps réel des coupures d'électricité et délestages STEG en Tunisie, par délégation. Annonces officielles, signalements citoyens et imagerie satellite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{
+  --night:#0B1122; --panel:#141D36; --line:#22304F; --line2:#2C3B60;
+  --amber:#FFB454; --red:#FF4D3D; --sched:#F5A524; --ok:#2FBF8F;
+  --txt:#E8EDF7; --mut:#8B96B3;
+  --disp:'Space Grotesk',system-ui,sans-serif;
+  --body:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--night);color:var(--txt);font-family:var(--body);display:flex;flex-direction:column;height:100dvh;overflow:hidden}
+button{font-family:var(--body);cursor:pointer;border:none;background:none;color:inherit}
+a{color:var(--amber)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offset:2px;border-radius:6px}
+
+.hd{background:linear-gradient(180deg,#0D1428 0%,#0B1122 100%);border-bottom:1px solid var(--line);padding:10px 14px 0;flex:none;z-index:1200}
+.hd-row{display:flex;align-items:center;gap:10px}
+.brand{font-family:var(--disp);font-weight:700;font-size:1.25rem;letter-spacing:.01em;display:flex;align-items:baseline;gap:8px}
+.brand .bolt{color:var(--amber)}
+.brand .ar{font-size:1.05rem;color:var(--amber);font-weight:500}
+.tagline{font-size:.7rem;color:var(--mut);letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
+.hd-sp{flex:1}
+.chip-proto{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;color:var(--amber);border:1px solid #4a3a1e;background:#1c1607;border-radius:999px;padding:4px 9px;white-space:nowrap}
+.btn-info{width:32px;height:32px;border-radius:50%;border:1px solid var(--line2);color:var(--mut);font-family:var(--mono);font-size:.85rem;flex:none}
+.btn-info:hover{color:var(--txt);border-color:var(--amber)}
+.trace{display:block;width:100%;height:16px;margin-top:8px}
+.trace path{fill:none;stroke:var(--amber);stroke-width:1.4;opacity:.8;stroke-dasharray:6 5;animation:flow 1.6s linear infinite}
+.trace.alert path{stroke:var(--red)}
+.trace text{font-family:var(--mono);font-size:7px;fill:var(--mut)}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion: reduce){.trace path{animation:none}}
+.stats{display:flex;gap:14px;align-items:center;padding:7px 0 9px;font-family:var(--mono);font-size:.72rem;color:var(--mut);overflow-x:auto;scrollbar-width:none}
+.stats::-webkit-scrollbar{display:none}
+.stat{display:flex;gap:6px;align-items:center;white-space:nowrap}
+.stat b{color:var(--txt);font-weight:500}
+.dot{width:8px;height:8px;border-radius:2px;flex:none}
+.dot.r{background:var(--red)} .dot.s{background:var(--sched)} .dot.g{background:var(--ok)}
+#clock{margin-left:auto;color:var(--mut)}
+
+.mapwrap{position:relative;flex:1;min-height:0}
+#map{position:absolute;inset:0;background:#0B1122}
+.leaflet-container{font-family:var(--body)}
+.loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:var(--night);z-index:1500;font-family:var(--mono);font-size:.75rem;color:var(--mut)}
+.loading .bolt{font-size:2rem;animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.3}}
+.ctl{position:absolute;top:10px;left:10px;right:10px;z-index:1000;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.seg{pointer-events:auto;display:inline-flex;background:rgba(13,20,40,.92);backdrop-filter:blur(6px);border:1px solid var(--line2);border-radius:10px;padding:3px;width:max-content;box-shadow:0 4px 18px rgba(0,0,0,.45)}
+.seg button{font-size:.78rem;font-weight:600;padding:7px 13px;border-radius:8px;color:var(--mut)}
+.seg button.on{background:var(--amber);color:#161006}
+.dates{pointer-events:auto;display:none;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.dates.show{display:flex}
+.dates::-webkit-scrollbar{display:none}
+.dchip{flex:none;font-family:var(--mono);font-size:.68rem;padding:6px 10px;border-radius:8px;border:1px solid var(--line2);background:rgba(13,20,40,.92);color:var(--mut)}
+.dchip.on{border-color:var(--amber);color:var(--amber);background:#1c1607}
+.sathint{pointer-events:none;display:none;font-size:.68rem;color:#cdd6ea;background:rgba(13,20,40,.85);border:1px solid var(--line);border-radius:8px;padding:6px 9px;max-width:340px;line-height:1.45}
+.sathint.show{display:block}
+.btn-loc{position:absolute;right:10px;bottom:126px;z-index:1000;width:40px;height:40px;border-radius:10px;background:rgba(13,20,40,.92);border:1px solid var(--line2);color:var(--txt);font-size:1rem;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.legend{position:absolute;left:10px;bottom:12px;z-index:1000;display:flex;flex-wrap:wrap;gap:6px;max-width:70%}
+.lg{display:flex;align-items:center;gap:6px;font-size:.66rem;color:#cdd6ea;background:rgba(13,20,40,.88);border:1px solid var(--line);border-radius:999px;padding:4px 9px}
+.lg i{width:9px;height:9px;border-radius:2px;flex:none}
+.leaflet-bar{border:1px solid var(--line2)!important;box-shadow:0 4px 14px rgba(0,0,0,.4)!important}
+.leaflet-bar a{background:rgba(13,20,40,.92)!important;color:var(--txt)!important;border-bottom:1px solid var(--line)!important}
+.leaflet-control-attribution{background:rgba(11,17,34,.75)!important;color:#5d688a!important;font-size:.55rem!important}
+.leaflet-control-attribution a{color:#7e8ab0!important}
+.leaflet-popup-content-wrapper{background:var(--panel);color:var(--txt);border-radius:12px;border:1px solid var(--line2);box-shadow:0 10px 30px rgba(0,0,0,.55)}
+.leaflet-popup-tip{background:var(--panel);border:1px solid var(--line2)}
+.leaflet-popup-content{margin:13px 15px;line-height:1.4}
+.leaflet-popup-close-button{color:var(--mut)!important}
+.pp-name{font-family:var(--disp);font-weight:700;font-size:1.02rem}
+.pp-name .ar{color:var(--amber);font-weight:500;font-size:.92rem;margin-inline-start:6px}
+.pp-gov{font-size:.72rem;color:var(--mut);margin-top:1px}
+.pp-st{display:inline-flex;align-items:center;gap:6px;font-size:.7rem;font-weight:600;border-radius:999px;padding:4px 10px;margin-top:8px}
+.pp-st i{width:8px;height:8px;border-radius:50%}
+.st-out{background:#2b0f0c;color:#ff8d82}.st-out i{background:var(--red)}
+.st-sched{background:#2a1e05;color:#ffca6b}.st-sched i{background:var(--sched)}
+.st-back{background:#0b241c;color:#5fe0b2}.st-back i{background:var(--ok)}
+.st-none{background:#1a2440;color:#93a0c2}.st-none i{background:#4a5a85}
+.pp-note{font-size:.7rem;color:var(--mut);margin-top:7px;line-height:1.45}
+.pp-note a{font-size:.68rem}
+.pp-btns{display:flex;gap:8px;margin-top:11px}
+.pp-btns button{flex:1;font-size:.74rem;font-weight:600;padding:9px 6px;border-radius:9px}
+.b-out{background:var(--red);color:#fff}
+.b-back{background:#123528;color:#5fe0b2;border:1px solid #1d5c44}
+
+.sheet{flex:none;background:var(--panel);border-top:1px solid var(--line2);z-index:1100;display:flex;flex-direction:column;max-height:52dvh;transition:max-height .25s ease}
+.sheet.closed{max-height:46px}
+.sheet-h{flex:none;display:flex;align-items:center;gap:8px;padding:12px 14px;font-family:var(--disp);font-weight:700;font-size:.85rem;width:100%;text-align:left}
+.sheet-h .n{font-family:var(--mono);font-weight:500;font-size:.7rem;color:var(--amber)}
+.sheet-h .car{margin-left:auto;color:var(--mut);transition:transform .25s}
+.sheet.closed .car{transform:rotate(180deg)}
+.sheet-b{overflow-y:auto;padding:0 14px 14px}
+.gen-meta{font-family:var(--mono);font-size:.62rem;color:var(--mut);margin-top:10px;line-height:1.5}
+.sec{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:14px 0 7px}
+.it{display:flex;gap:9px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #1b2545;font-size:.78rem;line-height:1.45}
+.it:last-child{border-bottom:none}
+.it .dot{margin-top:5px}
+.it .t{font-family:var(--mono);font-size:.66rem;color:var(--mut);margin-left:auto;white-space:nowrap;padding-left:8px}
+.it .sub{color:var(--mut);font-size:.68rem}
+.it .zones{color:#aeb9d6;font-size:.68rem;margin-top:2px}
+.it .lk{font-size:.66rem;font-family:var(--mono)}
+.empty{color:var(--mut);font-size:.74rem;padding:8px 0}
+.badge{font-family:var(--mono);font-size:.58rem;border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:1px;white-space:nowrap}
+.badge.live{background:#2a1e05;color:var(--sched)}
+.badge.done{background:#1a2440;color:var(--mut)}
+.badge.next{background:#0b241c;color:var(--ok)}
+.badge.web{background:#101d3d;color:#7fa7ff}
+
+.modal{position:fixed;inset:0;background:rgba(5,8,18,.72);z-index:2000;display:none;align-items:flex-end;justify-content:center}
+.modal.show{display:flex}
+.mcard{background:var(--panel);border:1px solid var(--line2);border-radius:16px 16px 0 0;max-width:640px;width:100%;max-height:82dvh;overflow-y:auto;padding:20px 18px calc(20px + env(safe-area-inset-bottom))}
+.mcard h2{font-family:var(--disp);font-size:1.1rem;margin-bottom:4px}
+.mcard h2 .ar{color:var(--amber);font-weight:500}
+.mcard h3{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin:16px 0 6px}
+.mcard p{font-size:.8rem;line-height:1.55;color:#c6cee2}
+.mcard .src{display:flex;gap:9px;margin:8px 0;font-size:.78rem;line-height:1.5;color:#c6cee2}
+.mcard .src b{color:var(--txt)}
+.mcard .src .dot{margin-top:6px}
+.mclose{width:100%;margin-top:18px;padding:12px;border-radius:10px;background:var(--amber);color:#161006;font-weight:700;font-size:.85rem}
+.fineprint{font-size:.62rem;color:#5d688a;margin-top:12px;line-height:1.5}
+.toast{position:fixed;left:50%;bottom:calc(60px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);background:#101a33;border:1px solid var(--line2);color:var(--txt);font-size:.78rem;padding:10px 16px;border-radius:10px;z-index:2500;opacity:0;pointer-events:none;transition:.25s;box-shadow:0 8px 24px rgba(0,0,0,.5);max-width:88vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(min-width:760px){
+  .modal{align-items:center}
+  .mcard{border-radius:16px}
+  .legend{max-width:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd-row">
+    <div>
+      <div class="brand"><span class="bolt">⚡</span>Dhaw <span class="ar">ضو</span></div>
+      <div class="tagline">Coupures d'électricité · Tunisie · temps réel</div>
+    </div>
+    <div class="hd-sp"></div>
+    <span class="chip-proto">OPEN&nbsp;SOURCE</span>
+    <button class="btn-info" id="btnInfo" aria-label="À propos du projet">i</button>
+  </div>
+  <svg class="trace" id="trace" viewBox="0 0 600 16" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8 T 125 8 T 150 8 T 175 8 T 200 8 T 225 8 T 250 8 T 275 8 T 300 8 T 325 8 T 350 8 T 375 8 T 400 8 T 425 8 T 450 8 T 475 8 T 500 8 T 525 8 T 550 8 T 575 8 T 600 8"/>
+    <text x="560" y="6">50 Hz</text>
+  </svg>
+  <div class="stats" aria-live="polite">
+    <span class="stat"><span class="dot s"></span><b id="nSched">0</b> délég. sous annonce STEG</span>
+    <span class="stat"><span class="dot r"></span><b id="nOut">0</b> coupures signalées</span>
+    <span class="stat"><span class="dot g"></span><b id="nBack">0</b> rétablies</span>
+    <span class="stat" id="clock">--:--:--</span>
+  </div>
+</header>
+
+<div class="mapwrap">
+  <div id="map"></div>
+  <div class="loading" id="loading"><span class="bolt">⚡</span>Chargement des 264 délégations…</div>
+  <div class="ctl">
+    <div class="seg" role="tablist" aria-label="Fond de carte">
+      <button id="segMap" class="on">Carte</button>
+      <button id="segSat">Nuit satellite 🛰</button>
+    </div>
+    <div class="dates" id="dates"></div>
+    <div class="sathint" id="sathint">Lumières nocturnes <b>NASA VIIRS</b> (~500 m, image vers 01h30). Zones sombres = éclairage absent → possible coupure. Attention : les nuages assombrissent aussi l'image.</div>
+  </div>
+  <button class="btn-loc" id="btnLoc" aria-label="Ma position">◎</button>
+  <div class="legend">
+    <span class="lg"><i style="background:var(--sched)"></i>Annonce STEG en cours</span>
+    <span class="lg"><i style="background:var(--red)"></i>Coupure signalée</span>
+    <span class="lg"><i style="background:var(--ok)"></i>Courant rétabli</span>
+    <span class="lg"><i style="background:#3a4a75"></i>Aucun signalement</span>
+  </div>
+</div>
+
+<section class="sheet closed" id="sheet">
+  <button class="sheet-h" id="sheetH" aria-expanded="false">
+    Annonces STEG &amp; signalements <span class="n" id="sheetN"></span>
+    <span class="car">▾</span>
+  </button>
+  <div class="sheet-b" id="sheetB">
+    <div class="gen-meta" id="genMeta">Annonces actualisées automatiquement toutes les 10 min (GitHub Actions).</div>
+    <div class="sec">🗓 Annonces STEG (relayées par la presse)</div>
+    <div id="listSched"><div class="empty">Chargement…</div></div>
+    <div class="sec">📍 Signalements citoyens</div>
+    <div id="listFeed"><div class="empty">Aucun signalement pour l'instant. Touchez une délégation sur la carte pour signaler une coupure.</div></div>
+  </div>
+</section>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="À propos">
+  <div class="mcard">
+    <h2>⚡ Dhaw <span class="ar">ضو</span> — comment ça marche ?</h2>
+    <p>Carte open source des coupures d'électricité en Tunisie, au niveau des <b>264 délégations</b>, pensée pour les périodes de canicule et de délestage.</p>
+    <h3>3 sources de données croisées</h3>
+    <div class="src"><span class="dot s"></span><div><b>Annonces STEG (automatiques).</b> Un robot lit toutes les 10 minutes les flux des médias tunisiens (La Presse, Webdo, Business News, Gnet…) qui relaient les communiqués publiés par la STEG sur son site et sa page Facebook, en extrait les horaires et localités, et met la carte à jour.</div></div>
+    <div class="src"><span class="dot r"></span><div><b>Signalements citoyens (temps réel).</b> Chaque visiteur peut signaler « coupure » ou « courant rétabli » dans sa délégation. Les signalements sont partagés entre tous les visiteurs et expirent après 4 h.</div></div>
+    <div class="src"><span class="dot g"></span><div><b>Satellite NASA VIIRS (vérification).</b> L'onglet « Nuit satellite » affiche les lumières nocturnes réelles (~500 m, chaque nuit vers 01h30) : comparer une nuit récente à la référence permet de repérer les zones restées dans le noir.</div></div>
+    <h3>Open source</h3>
+    <p>Code libre (MIT) : frontend statique + scraper Python + GitHub Actions + Supabase. Contributions bienvenues — voir le README du dépôt pour déployer votre propre instance gratuitement.</p>
+    <p class="fineprint">Géographie : délégations de Tunisie (riatelab/tunisie, INS). Fonds de carte : © OpenStreetMap / CARTO. Imagerie nocturne : NASA EOSDIS GIBS (VIIRS DNB). Annonces : communiqués STEG relayés par la presse tunisienne (liens affichés). Projet citoyen — non affilié à la STEG. Urgences STEG : 71 239 222.</p>
+    <button class="mclose" id="btnClose">Compris, voir la carte</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="config.js"></script>
+<script>
+(function(){
+'use strict';
+const $ = id => document.getElementById(id);
+const OUT_TTL = 4*3600e3, BACK_TTL = 2*3600e3;
+const CFG = window.DHAW_CONFIG || {};
+const SB = (CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY)
+  ? { u: CFG.SUPABASE_URL.replace(/\/+$/,''), k: CFG.SUPABASE_ANON_KEY } : null;
+
+const state = { deleg:null, byId:{}, reports:[], announce:[], generatedAt:null,
+                layerMode:'map', satDate:null, sbWarned:false };
+
+const fmtH = d => new Date(d).toLocaleTimeString('fr-TN',{hour:'2-digit',minute:'2-digit'});
+function esc(s){ return String(s||'').replace(/[<>&"]/g, c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c])); }
+let toastT;
+function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show');
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),3000); }
+
+/* ---------- statuts ---------- */
+function annBounds(a){
+  const s = new Date(a.date+'T'+(a.start||'00:00')+':00').getTime();
+  const e = new Date(a.date+'T'+(a.end||'23:59')+':00').getTime();
+  return [s,e];
+}
+function activeAnnFor(id, now){
+  for(const a of state.announce){
+    if(!a.ids || !a.ids.includes(id)) continue;
+    const [s,e]=annBounds(a);
+    if(now>=s && now<=e) return a;
+  }
+  return null;
+}
+function latestEvent(id, now){
+  let best=null;
+  for(const r of state.reports){ if(r.id===id && (!best || r.t>best.t)) best=r; }
+  if(!best) return null;
+  if(best.k==='out'  && now-best.t < OUT_TTL)  return best;
+  if(best.k==='back' && now-best.t < BACK_TTL) return best;
+  return null;
+}
+function statusOf(id, now){
+  const ev = latestEvent(id, now);
+  if(ev) return ev.k==='out' ? 'out' : 'back';
+  if(activeAnnFor(id, now)) return 'sched';
+  return 'none';
+}
+const COLORS = {out:'#FF4D3D', sched:'#F5A524', back:'#2FBF8F', none:'#3a4a75'};
+function styleOf(id){
+  const st = statusOf(id, Date.now());
+  const sat = state.layerMode==='sat';
+  const fillOp = st==='none' ? (sat? .03 : .22) : (sat? .34 : {out:.62,sched:.5,back:.42}[st]);
+  return { color: sat? '#5a6b9c' : '#0B1122', weight: sat? .5 : .8,
+           fillColor: COLORS[st], fillOpacity: fillOp, opacity: sat? .5 : .9 };
+}
+
+/* ---------- carte ---------- */
+const map = L.map('map',{zoomControl:false, attributionControl:true});
+map.attributionControl.setPrefix(false);
+L.control.zoom({position:'bottomright'}).addTo(map);
+const TRANSPARENT='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+const lyrCarto = L.tileLayer('https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
+  {maxZoom:18, attribution:'© OpenStreetMap © CARTO', errorTileUrl:TRANSPARENT});
+const lyrLabels = L.tileLayer('https://basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}.png',
+  {maxZoom:18, errorTileUrl:TRANSPARENT, pane:'shadowPane'});
+let lyrSat = null, gj = null;
+lyrCarto.addTo(map);
+map.setView([34.1, 9.6], 6);
+
+/* ---------- popup ---------- */
+const ST_LABEL = {
+  out:  ['st-out','Coupure signalée'],
+  sched:['st-sched','Annonce STEG en cours'],
+  back: ['st-back','Courant rétabli'],
+  none: ['st-none','Aucun signalement']
+};
+function openPopup(p, layer){
+  const now = Date.now();
+  const st = statusOf(p.id, now);
+  const ev = latestEvent(p.id, now);
+  const ann = activeAnnFor(p.id, now) || state.announce.find(a=>a.ids&&a.ids.includes(p.id));
+  let html = '<div class="pp-name">'+esc(p.fr)+'<span class="ar">'+esc(p.ar)+'</span></div>'
+    + '<div class="pp-gov">Gouvernorat de '+esc(p.gv)+' · '+esc(p.gvar)+'</div>'
+    + '<span class="pp-st '+ST_LABEL[st][0]+'"><i></i>'+ST_LABEL[st][1]+'</span>';
+  if(ev) html += '<div class="pp-note">Dernier signalement à '+fmtH(ev.t)+'.</div>';
+  if(ann){
+    const [s,e]=annBounds(ann);
+    html += '<div class="pp-note">🗓 STEG : '+esc(ann.type)+' '+fmtH(s)+' → '+fmtH(e)
+      + (now>e?' (terminé)':'')
+      + (ann.url?'<br>Source : <a href="'+esc(ann.url)+'" target="_blank" rel="noopener">'+esc(ann.source||'article')+' ↗</a>':'')+'</div>';
+  }
+  html += '<div class="pp-btns">'
+    + '<button class="b-out" onclick="DHAW.report(\''+p.id+'\',\'out\')">⚡ Signaler une coupure</button>'
+    + '<button class="b-back" onclick="DHAW.report(\''+p.id+'\',\'back\')">✓ Courant rétabli</button>'
+    + '</div>';
+  layer.bindPopup(html,{maxWidth:300}).openPopup();
+}
+
+/* ---------- données : annonces (scraper) ---------- */
+async function loadAnnonces(){
+  try{
+    const r = await fetch('data/annonces.json?v='+Date.now(), {cache:'no-store'});
+    const d = await r.json();
+    if(Array.isArray(d.items)) state.announce = d.items;
+    state.generatedAt = d.generated_at || null;
+  }catch(e){ console.warn('annonces:', e); }
+}
+
+/* ---------- données : signalements (Supabase REST, optionnel) ---------- */
+async function loadReports(){
+  if(!SB) return;
+  try{
+    const since = new Date(Date.now()-24*3600e3).toISOString();
+    const r = await fetch(SB.u+'/rest/v1/reports?select=deleg_id,kind,created_at'
+      +'&created_at=gte.'+encodeURIComponent(since)+'&order=created_at.desc&limit=400',
+      {headers:{apikey:SB.k, Authorization:'Bearer '+SB.k}});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const rows = await r.json();
+    state.reports = rows.map(x=>({id:x.deleg_id, k:x.kind, t:Date.parse(x.created_at)}));
+  }catch(e){ console.warn('supabase:', e); }
+}
+async function report(id, kind){
+  state.reports.unshift({id, k:kind, t:Date.now()});
+  render(); map.closePopup();
+  toast(kind==='out' ? '⚡ Coupure signalée — chokran !' : '✓ Rétablissement signalé — chokran !');
+  if(!SB){
+    if(!state.sbWarned){ state.sbWarned=true;
+      toast('Mode démo local — activez Supabase pour partager les signalements (voir README)'); }
+    return;
+  }
+  try{
+    await fetch(SB.u+'/rest/v1/reports',{method:'POST',
+      headers:{apikey:SB.k, Authorization:'Bearer '+SB.k,
+               'Content-Type':'application/json', Prefer:'return=minimal'},
+      body: JSON.stringify({deleg_id:id, kind})});
+  }catch(e){ console.warn('insert:', e); }
+}
+window.DHAW = { report };
+
+/* ---------- rendu ---------- */
+function render(){
+  const now = Date.now();
+  if(gj) gj.eachLayer(l=>l.setStyle(styleOf(l.feature.properties.id)));
+  let nOut=0,nBack=0,nSched=0;
+  if(state.deleg) for(const f of state.deleg.features){
+    const st=statusOf(f.properties.id, now);
+    if(st==='out')nOut++; else if(st==='back')nBack++; else if(st==='sched')nSched++;
+  }
+  $('nOut').textContent=nOut; $('nBack').textContent=nBack; $('nSched').textContent=nSched;
+  $('trace').classList.toggle('alert', nOut>=3 || nSched>=15);
+
+  $('listSched').innerHTML = state.announce.map(a=>{
+    const [s,e]=annBounds(a); const live = now>=s&&now<=e; const done = now>e;
+    const b = live?'<span class="badge live">EN COURS</span>':done?'<span class="badge done">TERMINÉE</span>':'<span class="badge next">À VENIR</span>';
+    const w = a.via==='scraper'?'<span class="badge web">AUTO</span>':'';
+    return '<div class="it"><span class="dot s"></span><div><b>'+esc(a.titre)+'</b>'+b+w
+      +'<div class="sub">'+esc(a.type)+' · '+fmtH(s)+' → '+fmtH(e)
+      +(a.url?' · <a class="lk" href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.source||'source')+' ↗</a>':'')+'</div>'
+      +(a.zones?'<div class="zones">'+esc(a.zones)+'</div>':'')
+      +'</div></div>';
+  }).join('') || '<div class="empty">Aucune annonce récente. Le robot vérifie toutes les 10 minutes.</div>';
+
+  const feed = state.reports.slice(0,15);
+  $('listFeed').innerHTML = feed.length ? feed.map(r=>{
+    const p=state.byId[r.id]||{fr:r.id,gv:''};
+    const cls = r.k==='out'?'r':'g';
+    const lbl = r.k==='out'?'Coupure signalée':'Courant rétabli';
+    return '<div class="it"><span class="dot '+cls+'"></span><div><b>'+esc(p.fr)+'</b> <span class="sub">('+esc(p.gv)+')</span><div class="sub">'+lbl+(SB?'':' · démo locale')+'</div></div><span class="t">'+fmtH(r.t)+'</span></div>';
+  }).join('') : '<div class="empty">Aucun signalement pour l\'instant. Touchez une délégation sur la carte pour signaler une coupure.</div>';
+
+  const nowAct = state.announce.filter(a=>{const [s,e]=annBounds(a);return now>=s&&now<=e;}).length;
+  $('sheetN').textContent = '('+nowAct+' en cours · '+feed.length+' signalements)';
+  $('genMeta').textContent = 'Annonces actualisées automatiquement toutes les 10 min (GitHub Actions)'
+    + (state.generatedAt ? ' · dernière génération : '
+       + new Date(state.generatedAt).toLocaleString('fr-TN',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}) : '')
+    + (SB ? '' : ' · Signalements : mode démo (Supabase non configuré)');
+}
+
+/* ---------- satellite VIIRS ---------- */
+const GIBS='https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/';
+function isoDaysAgo(n){ const d=new Date(Date.now()-n*864e5); return d.toISOString().slice(0,10); }
+function satLayer(date){
+  const url = date==='ref'
+    ? GIBS+'VIIRS_Black_Marble/default/2016-01-01/GoogleMapsCompatible_Level8/{z}/{y}/{x}.png'
+    : GIBS+'VIIRS_SNPP_DayNightBand_ENCC/default/'+date+'/GoogleMapsCompatible_Level8/{z}/{y}/{x}.png';
+  return L.tileLayer(url,{maxNativeZoom:8,maxZoom:12,attribution:'NASA EOSDIS GIBS · VIIRS DNB',errorTileUrl:TRANSPARENT});
+}
+function buildDates(){
+  const el=$('dates'); el.innerHTML='';
+  for(let n=1;n<=7;n++){
+    const iso=isoDaysAgo(n);
+    const lab = n===1?'Hier':new Date(Date.now()-n*864e5).toLocaleDateString('fr-TN',{day:'2-digit',month:'2-digit'});
+    const b=document.createElement('button'); b.className='dchip'+(n===1?' on':''); b.textContent='🌙 '+lab;
+    b.onclick=()=>setSatDate(iso,b); el.appendChild(b);
+  }
+  const ref=document.createElement('button'); ref.className='dchip'; ref.textContent='Réf. 2016';
+  ref.onclick=()=>setSatDate('ref',ref); el.appendChild(ref);
+}
+function setSatDate(date, btn){
+  state.satDate=date;
+  document.querySelectorAll('.dchip').forEach(x=>x.classList.remove('on'));
+  if(btn) btn.classList.add('on');
+  if(lyrSat) map.removeLayer(lyrSat);
+  lyrSat = satLayer(date).addTo(map);
+  lyrSat.bringToBack();
+}
+function setMode(mode){
+  state.layerMode=mode;
+  $('segMap').classList.toggle('on',mode==='map');
+  $('segSat').classList.toggle('on',mode==='sat');
+  $('dates').classList.toggle('show',mode==='sat');
+  $('sathint').classList.toggle('show',mode==='sat');
+  if(mode==='sat'){
+    map.removeLayer(lyrCarto);
+    lyrLabels.addTo(map);
+    setSatDate(state.satDate||isoDaysAgo(1), document.querySelector('.dchip.on'));
+  }else{
+    if(lyrSat){map.removeLayer(lyrSat); }
+    map.removeLayer(lyrLabels);
+    lyrCarto.addTo(map); lyrCarto.bringToBack();
+  }
+  render();
+}
+$('segMap').onclick=()=>setMode('map');
+$('segSat').onclick=()=>setMode('sat');
+buildDates();
+
+/* ---------- UI ---------- */
+$('sheetH').onclick=()=>{
+  const s=$('sheet'); s.classList.toggle('closed');
+  $('sheetH').setAttribute('aria-expanded', String(!s.classList.contains('closed')));
+  setTimeout(()=>map.invalidateSize(),260);
+};
+$('btnInfo').onclick=()=>$('modal').classList.add('show');
+$('btnClose').onclick=()=>$('modal').classList.remove('show');
+$('modal').onclick=e=>{ if(e.target.id==='modal') $('modal').classList.remove('show'); };
+$('btnLoc').onclick=()=>{
+  if(!navigator.geolocation) return toast('Géolocalisation indisponible');
+  navigator.geolocation.getCurrentPosition(pos=>{
+    const ll=[pos.coords.latitude,pos.coords.longitude];
+    L.circleMarker(ll,{radius:7,color:'#FFB454',fillColor:'#FFB454',fillOpacity:.9}).addTo(map);
+    map.setView(ll,10);
+  },()=>toast('Position refusée ou indisponible'));
+};
+function tick(){ $('clock').textContent='MAJ '+new Date().toLocaleTimeString('fr-TN'); }
+setInterval(tick,1000); tick();
+
+/* ---------- démarrage ---------- */
+async function boot(){
+  try{
+    const r = await fetch('data/delegations.json');
+    state.deleg = await r.json();
+    state.deleg.features.forEach(f=>state.byId[f.properties.id]=f.properties);
+    gj = L.geoJSON(state.deleg, {
+      style: f => styleOf(f.properties.id),
+      onEachFeature: (f, layer) => {
+        layer.on('click', ()=> openPopup(f.properties, layer));
+        layer.on('mouseover', ()=> layer.setStyle({weight:2, color:'#FFB454'}));
+        layer.on('mouseout',  ()=> layer.setStyle(styleOf(f.properties.id)));
+      }
+    }).addTo(map);
+    map.fitBounds(gj.getBounds(), {padding:[8,8]});
+    map.setMaxBounds(gj.getBounds().pad(0.6));
+    $('loading').remove();
+  }catch(e){
+    $('loading').innerHTML = 'Impossible de charger les données.<br>Vérifiez que data/delegations.json est bien déployé.';
+    console.error(e); return;
+  }
+  await Promise.all([loadAnnonces(), loadReports()]);
+  render();
+  setInterval(async ()=>{ await loadReports(); render(); }, 30000);
+  setInterval(async ()=>{ await loadAnnonces(); render(); }, 5*60000);
+  document.addEventListener('visibilitychange', async ()=>{
+    if(!document.hidden){ await Promise.all([loadAnnonces(), loadReports()]); render(); }
+  });
+}
+boot();
+})();
+</script>
+</body>
+</html>

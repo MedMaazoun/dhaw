@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-23T20:55:56+01:00",
+ "generated_at": "2026-07-23T22:07:58+01:00",
  "items": [
+  {
+   "date": "2026-07-23",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Kaïs Saïed réunit les ministres concernés face aux coupures d’eau, d’électricité et aux incendies",
+   "zones": "",
+   "ids": [],
+   "source": "Gnet",
+   "url": "https://news.gnet.tn/kais-saied-reunit-les-ministres-concernes-face-aux-coupures-deau-delectricite-et-aux-incendies/",
+   "via": "scraper",
+   "fetched_at": "2026-07-23T22:07:58+01:00"
+  },
   {
    "date": "2026-07-23",
    "start": "00:00",
@@ -276,19 +289,6 @@
    "ids": [],
    "source": "La Presse",
    "url": "https://www.lapresse.tn/2026/07/23/steg-liste-de-toutes-les-regions-qui-subiront-des-coupures-delectricite-ce-soir/",
-   "via": "scraper",
-   "fetched_at": "2026-07-23T18:01:12+01:00"
-  },
-  {
-   "date": "2026-07-23",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Délestages : le syndicat de la STEG pointe des « choix politiques » derrière la crise énergétique",
-   "zones": "",
-   "ids": [],
-   "source": "Gnet",
-   "url": "https://news.gnet.tn/delestages-le-syndicat-de-la-steg-pointe-des-choix-politiques-derriere-la-crise-energetique/",
    "via": "scraper",
    "fetched_at": "2026-07-23T18:01:12+01:00"
   }

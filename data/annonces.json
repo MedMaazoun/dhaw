@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-24T15:21:02+01:00",
+ "generated_at": "2026-07-24T16:55:21+01:00",
  "items": [
+  {
+   "date": "2026-07-23",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Délestages : La STEG annonce les coupures tournantes de la soirée de jeudi",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/delestages-la-steg-annonce-les-coupures-tournantes-de-la-soiree-de-jeudi/401556/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T16:55:21+01:00"
+  },
   {
    "date": "2026-07-24",
    "start": "00:00",
@@ -282,19 +295,6 @@
    "url": "https://news.gnet.tn/delestages-le-syndicat-de-la-steg-pointe-des-choix-politiques-derriere-la-crise-energetique/",
    "via": "scraper",
    "fetched_at": "2026-07-23T23:14:01+01:00"
-  },
-  {
-   "date": "2026-07-23",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Kaïs Saïed réunit les ministres concernés face aux coupures d’eau, d’électricité et aux incendies",
-   "zones": "",
-   "ids": [],
-   "source": "Gnet",
-   "url": "https://news.gnet.tn/kais-saied-reunit-les-ministres-concernes-face-aux-coupures-deau-delectricite-et-aux-incendies/",
-   "via": "scraper",
-   "fetched_at": "2026-07-23T22:07:58+01:00"
   }
  ]
 }

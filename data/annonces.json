@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-07-24T21:39:19+01:00",
+ "generated_at": "2026-07-24T22:45:39+01:00",
  "items": [
+  {
+   "date": "2026-07-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : Les entrepreneurs préparent une riposte judiciaire contre la STEG",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-les-entrepreneurs-preparent-une-riposte-judiciaire-contre-la-steg/401562/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T22:45:39+01:00"
+  },
+  {
+   "date": "2026-07-23",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité : 70% des restaurants touchés, le secteur réclame des compensations",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-70-des-restaurants-touches-le-secteur-reclame-des-compensations/401541/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T22:45:39+01:00"
+  },
   {
    "date": "2026-07-23",
    "start": "00:00",
@@ -310,32 +336,6 @@
    "url": "https://www.lapresse.tn/2026/07/24/steg-la-liste-des-zones-du-grand-tunis-touchees-par-les-coupures-delectricite-aujourdhui/",
    "via": "scraper",
    "fetched_at": "2026-07-24T13:20:14+01:00"
-  },
-  {
-   "date": "2026-07-24",
-   "start": "11:00",
-   "end": "17:00",
-   "type": "Délestage tournant",
-   "titre": "STEG : la liste complète des régions concernées par les coupures d’électricité de 11h à 17h",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/24/steg-la-liste-complete-des-regions-concernees-par-les-coupures-delectricite-de-11h-a-17h/",
-   "via": "scraper",
-   "fetched_at": "2026-07-24T13:20:14+01:00"
-  },
-  {
-   "date": "2026-07-24",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Délestages en Tunisie : La fin des coupures tournantes se profile",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/delestages-en-tunisie-la-fin-des-coupures-tournantes-se-profile/401567/",
-   "via": "scraper",
-   "fetched_at": "2026-07-24T11:50:46+01:00"
   }
  ]
 }

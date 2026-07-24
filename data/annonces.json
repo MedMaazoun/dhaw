@@ -1,6 +1,65 @@
 {
- "generated_at": "2026-07-24T13:20:14+01:00",
+ "generated_at": "2026-07-24T15:21:02+01:00",
  "items": [
+  {
+   "date": "2026-07-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’eau et d’électricité : une séance plénière au Parlement lundi prochain",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/24/coupures-deau-et-delectricite-une-seance-pleniere-au-parlement-lundi-prochain/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T15:21:02+01:00"
+  },
+  {
+   "date": "2026-07-23",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité : 70% des restaurants touchés, selon la Chambre nationale des restaurateurs",
+   "zones": "",
+   "ids": [],
+   "source": "Gnet",
+   "url": "https://news.gnet.tn/coupures-delectricite-70-des-restaurants-touches-selon-la-chambre-nationale-des-restaurateurs/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T15:21:02+01:00"
+  },
+  {
+   "date": "2026-07-23",
+   "start": "11:00",
+   "end": "17:00",
+   "type": "Délestage tournant",
+   "titre": "Délestage : de nouvelles coupures possibles ce jeudi dans le Grand Tunis",
+   "zones": "ain zaghouan, ariana, cite ettadhamen, douar hicher, el menzah, el mourouj, ezzahra, fouchana, hammam lif, jardins de carthage, jedeida, ksar said, la goulette, la soukra, le kram, megrine, rades, sidi thabet, tebourba",
+   "ids": [
+    "TN111",
+    "TN126",
+    "TN142",
+    "TN11L",
+    "TN125",
+    "TN11J",
+    "TN134",
+    "TN133",
+    "TN118",
+    "TN122",
+    "TN141",
+    "TN13B",
+    "TN147",
+    "TN137",
+    "TN139",
+    "TN146",
+    "TN11K",
+    "TN121",
+    "TN138"
+   ],
+   "source": "Gnet",
+   "url": "https://news.gnet.tn/delestage-de-nouvelles-coupures-possibles-ce-jeudi-dans-le-grand-tunis/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T15:21:02+01:00"
+  },
   {
    "date": "2026-07-24",
    "start": "11:00",
@@ -236,45 +295,6 @@
    "url": "https://news.gnet.tn/kais-saied-reunit-les-ministres-concernes-face-aux-coupures-deau-delectricite-et-aux-incendies/",
    "via": "scraper",
    "fetched_at": "2026-07-23T22:07:58+01:00"
-  },
-  {
-   "date": "2026-07-23",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Délestages : La STEG annonce les coupures tournantes de la soirée de jeudi",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/delestages-la-steg-annonce-les-coupures-tournantes-de-la-soiree-de-jeudi/401556/",
-   "via": "scraper",
-   "fetched_at": "2026-07-23T20:55:56+01:00"
-  },
-  {
-   "date": "2026-07-22",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Coupures d’électricité : La STEG encadre enfin les batteries de stockage",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-la-steg-encadre-enfin-les-batteries-de-stockage/401482/",
-   "via": "scraper",
-   "fetched_at": "2026-07-23T20:55:56+01:00"
-  },
-  {
-   "date": "2026-07-23",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Délestages électriques : La réalité en dit long !",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/23/delestages-electriques-la-realite-en-dit-long/",
-   "via": "scraper",
-   "fetched_at": "2026-07-23T20:55:56+01:00"
   }
  ]
 }

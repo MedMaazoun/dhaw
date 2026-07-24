@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-24T22:45:39+01:00",
+ "generated_at": "2026-07-24T23:45:59+01:00",
  "items": [
+  {
+   "date": "2026-07-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Délestages en Tunisie : La fin des coupures tournantes se profile",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/delestages-en-tunisie-la-fin-des-coupures-tournantes-se-profile/401567/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T23:45:59+01:00"
+  },
   {
    "date": "2026-07-24",
    "start": "00:00",
@@ -321,19 +334,6 @@
    "ids": [],
    "source": "Webdo",
    "url": "https://www.webdo.tn/fr/actualite/national/steg-des-chefs-de-districts-et-dunites-vises-par-des-enquetes-vers-un-retour-progressif-a-la-normale/401507/",
-   "via": "scraper",
-   "fetched_at": "2026-07-24T13:20:14+01:00"
-  },
-  {
-   "date": "2026-07-24",
-   "start": "11:00",
-   "end": "17:00",
-   "type": "Délestage tournant",
-   "titre": "STEG : la liste des zones du Grand Tunis touchées par les coupures d’électricité aujourd’hui",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/24/steg-la-liste-des-zones-du-grand-tunis-touchees-par-les-coupures-delectricite-aujourdhui/",
    "via": "scraper",
    "fetched_at": "2026-07-24T13:20:14+01:00"
   }

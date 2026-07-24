@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-24T07:15:47+01:00",
+ "generated_at": "2026-07-24T09:46:52+01:00",
  "items": [
+  {
+   "date": "2026-07-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : Les entrepreneurs préparent une riposte judiciaire contre la STEG",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-les-entrepreneurs-preparent-une-riposte-judiciaire-contre-la-steg/401562/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T09:46:52+01:00"
+  },
   {
    "date": "2026-07-23",
    "start": "00:00",
@@ -248,19 +261,6 @@
    "ids": [],
    "source": "Webdo",
    "url": "https://www.webdo.tn/fr/actualite/national/steg-des-chefs-de-districts-et-dunites-vises-par-des-enquetes-vers-un-retour-progressif-a-la-normale/401507/",
-   "via": "scraper",
-   "fetched_at": "2026-07-23T18:01:12+01:00"
-  },
-  {
-   "date": "2026-07-22",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Face aux communiqués contestés de la STEG, « Fama Dhaw.com » cartographie les coupures en direct",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/face-aux-communiques-contestes-de-la-steg-fama-dhaw-com-cartographie-les-coupures-en-direct/401470/",
    "via": "scraper",
    "fetched_at": "2026-07-23T18:01:12+01:00"
   }

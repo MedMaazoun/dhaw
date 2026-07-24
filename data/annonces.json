@@ -1,6 +1,45 @@
 {
- "generated_at": "2026-07-24T20:04:33+01:00",
+ "generated_at": "2026-07-24T21:39:19+01:00",
  "items": [
+  {
+   "date": "2026-07-23",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Hammamet : Les hôtels appelés à produire leur propre électricité pour soulager le réseau national",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/regions/hammamet-les-hotels-appeles-a-produire-leur-propre-electricite-pour-soulager-le-reseau-national/401539/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T21:39:19+01:00"
+  },
+  {
+   "date": "2026-07-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Reportage – coupures d’électricité à nabeul : La grogne des glaciers et des bars à jus !",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/24/reportage-coupures-delectricite-a-nabeul-la-grogne-des-glaciers-et-des-bars-a-jus/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T21:39:19+01:00"
+  },
+  {
+   "date": "2026-07-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Poissons avariés, pertes financières : les professionnels de Menzel Temime interpellent la STEG",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/24/poissons-avaries-pertes-financieres-les-professionnels-de-menzel-temime-interpellent-la-steg/",
+   "via": "scraper",
+   "fetched_at": "2026-07-24T21:39:19+01:00"
+  },
   {
    "date": "2026-07-24",
    "start": "20:00",
@@ -297,45 +336,6 @@
    "url": "https://www.webdo.tn/fr/actualite/national/delestages-en-tunisie-la-fin-des-coupures-tournantes-se-profile/401567/",
    "via": "scraper",
    "fetched_at": "2026-07-24T11:50:46+01:00"
-  },
-  {
-   "date": "2026-07-24",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité : les entrepreneurs passent à l’offensive contre la STEG",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/24/coupures-delectricite-les-entrepreneurs-passent-a-loffensive-contre-la-steg/",
-   "via": "scraper",
-   "fetched_at": "2026-07-24T11:50:46+01:00"
-  },
-  {
-   "date": "2026-07-24",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Coupures d’électricité : Les entrepreneurs préparent une riposte judiciaire contre la STEG",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-les-entrepreneurs-preparent-une-riposte-judiciaire-contre-la-steg/401562/",
-   "via": "scraper",
-   "fetched_at": "2026-07-24T09:46:52+01:00"
-  },
-  {
-   "date": "2026-07-23",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité : 70% des restaurants touchés, le secteur réclame des compensations",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-70-des-restaurants-touches-le-secteur-reclame-des-compensations/401541/",
-   "via": "scraper",
-   "fetched_at": "2026-07-23T23:14:01+01:00"
   }
  ]
 }

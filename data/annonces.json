@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-25T19:05:54+01:00",
+ "generated_at": "2026-07-25T20:32:15+01:00",
  "items": [
+  {
+   "date": "2026-07-25",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Reportage – coupure d’électricité et commerce : Tout bloque !",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/25/reportage-coupure-delectricite-et-commerce-tout-bloque/",
+   "via": "scraper",
+   "fetched_at": "2026-07-25T20:32:15+01:00"
+  },
   {
    "date": "2026-07-25",
    "start": "00:00",
@@ -303,19 +316,6 @@
    "url": "https://www.webdo.tn/fr/actualite/national/delestages-la-steg-annonce-les-coupures-tournantes-de-la-soiree-de-jeudi/401556/",
    "via": "scraper",
    "fetched_at": "2026-07-24T16:55:21+01:00"
-  },
-  {
-   "date": "2026-07-24",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’eau et d’électricité : une séance plénière au Parlement lundi prochain",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/24/coupures-deau-et-delectricite-une-seance-pleniere-au-parlement-lundi-prochain/",
-   "via": "scraper",
-   "fetched_at": "2026-07-24T15:21:02+01:00"
   }
  ]
 }

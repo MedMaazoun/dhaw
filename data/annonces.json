@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-26T08:27:36+01:00",
+ "generated_at": "2026-07-26T10:35:41+01:00",
  "items": [
+  {
+   "date": "2026-07-26",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Électricité : Derrière les annonces marocaines, où en sont réellement les grands projets ?",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/international/electricite-derriere-les-annonces-marocaines-ou-en-sont-reellement-les-grands-projets/401637/",
+   "via": "scraper",
+   "fetched_at": "2026-07-26T10:35:41+01:00"
+  },
   {
    "date": "2026-07-25",
    "start": "00:00",

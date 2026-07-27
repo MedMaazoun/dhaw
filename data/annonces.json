@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-27T23:29:51+01:00",
+ "generated_at": "2026-07-28T00:38:40+01:00",
  "items": [
   {
    "date": "2026-07-27",
@@ -182,19 +182,6 @@
    "url": "https://www.webdo.tn/fr/actualite/international/electricite-derriere-les-annonces-marocaines-ou-en-sont-reellement-les-grands-projets/401637/",
    "via": "scraper",
    "fetched_at": "2026-07-26T10:35:41+01:00"
-  },
-  {
-   "date": "2026-07-25",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Reportage – coupure d’électricité et commerce : Tout bloque !",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/25/reportage-coupure-delectricite-et-commerce-tout-bloque/",
-   "via": "scraper",
-   "fetched_at": "2026-07-25T20:32:15+01:00"
   }
  ]
 }

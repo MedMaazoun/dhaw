@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-07-27T14:54:15+01:00",
+ "generated_at": "2026-07-27T17:22:26+01:00",
  "items": [
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "L’ARP à l’heure des comptes",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/27/larp-a-lheure-des-comptes/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T17:22:26+01:00"
+  },
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’eau et d’électricité dans les hôpitaux : 10 questions écrites adressées au ministre de la Santé",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/27/coupures-deau-et-delectricite-dans-les-hopitaux-10-questions-ecrites-adressees-au-ministre-de-la-sante/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T17:22:26+01:00"
+  },
   {
    "date": "2026-07-27",
    "start": "00:00",

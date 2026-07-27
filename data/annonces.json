@@ -1,6 +1,58 @@
 {
- "generated_at": "2026-07-27T08:50:48+01:00",
+ "generated_at": "2026-07-27T12:25:08+01:00",
  "items": [
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’eau et d’électricité : L’ARP ouvre le débat et interpelle les autorités",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-deau-et-delectricite-larp-ouvre-le-debat-et-interpelle-les-autorites/401678/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T12:25:08+01:00"
+  },
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’eau à Mahdia et Sfax après une coupure d’électricité",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/regions/coupures-deau-a-mahdia-et-sfax-apres-une-coupure-delectricite/401656/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T12:25:08+01:00"
+  },
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "ARP : une séance plénière prévue aujourd’hui sur les coupures d’eau et d’électricité",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/27/arp-une-seance-pleniere-prevue-aujourdhui-sur-les-coupures-deau-et-delectricite/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T12:25:08+01:00"
+  },
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Électricité : les coupures se poursuivront malgré la baisse des températures",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/27/electricite-les-coupures-se-poursuivront-malgre-la-baisse-des-temperatures/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T12:25:08+01:00"
+  },
   {
    "date": "2026-07-26",
    "start": "00:00",

@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-27T20:52:12+01:00",
+ "generated_at": "2026-07-27T22:12:09+01:00",
  "items": [
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Conséquences des délestages en Tunisie : La durée de vie des appareils ménagers et électroniques menacée",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/27/consequences-des-delestages-en-tunisie-la-duree-de-vie-des-appareils-menagers-et-electroniques-menacee/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T22:12:09+01:00"
+  },
   {
    "date": "2026-07-27",
    "start": "00:00",
@@ -182,19 +195,6 @@
    "url": "https://www.lapresse.tn/2026/07/25/reportage-coupure-delectricite-et-commerce-tout-bloque/",
    "via": "scraper",
    "fetched_at": "2026-07-25T20:32:15+01:00"
-  },
-  {
-   "date": "2026-07-25",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité : plus de 30 avocats mobilisés pour défendre les entreprises face à la STEG",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/25/coupures-delectricite-plus-de-30-avocats-mobilises-pour-defendre-les-entreprises-face-a-la-steg/",
-   "via": "scraper",
-   "fetched_at": "2026-07-25T15:48:54+01:00"
   }
  ]
 }

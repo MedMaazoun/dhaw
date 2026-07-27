@@ -1,6 +1,45 @@
 {
- "generated_at": "2026-07-27T12:25:08+01:00",
+ "generated_at": "2026-07-27T14:54:15+01:00",
  "items": [
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : 70% des restaurants touchés, l’UTICA alerte sur des pertes importantes",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-70-des-restaurants-touches-lutica-alerte-sur-des-pertes-importantes/401684/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T14:54:15+01:00"
+  },
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’eau et d’électricité : Le Président de l’ARP appelle à surmonter la crise par les réformes",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/27/coupures-deau-et-delectricite-le-president-de-larp-appelle-a-surmonter-la-crise-par-les-reformes/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T14:54:15+01:00"
+  },
+  {
+   "date": "2026-07-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "L’ARP débat des coupures d’eau et d’électricité",
+   "zones": "",
+   "ids": [],
+   "source": "Tunisie Tribune",
+   "url": "https://www.tunisie-tribune.com/2026/07/27/larp-debat-des-coupures-deau-et-delectricite/",
+   "via": "scraper",
+   "fetched_at": "2026-07-27T14:54:15+01:00"
+  },
   {
    "date": "2026-07-27",
    "start": "00:00",

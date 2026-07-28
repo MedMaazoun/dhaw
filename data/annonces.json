@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-07-28T08:14:30+01:00",
+ "generated_at": "2026-07-28T10:59:04+01:00",
  "items": [
+  {
+   "date": "2026-07-28",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Batteries solaires en Tunisie : Une fausse solution face à une crise électrique structurelle ?",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/batteries-solaires-en-tunisie-une-fausse-solution-face-a-une-crise-electrique-structurelle/401727/",
+   "via": "scraper",
+   "fetched_at": "2026-07-28T10:59:04+01:00"
+  },
+  {
+   "date": "2026-07-28",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Chaos en Libye : Des groupes ferment les conduites de gaz et font planer le risque d’un black-out électrique",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/international/chaos-en-libye-des-groupes-ferment-les-conduites-de-gaz-et-font-planer-le-risque-dun-black-out-electrique/401716/",
+   "via": "scraper",
+   "fetched_at": "2026-07-28T10:59:04+01:00"
+  },
   {
    "date": "2026-07-28",
    "start": "00:00",
@@ -169,32 +195,6 @@
    "url": "https://www.lapresse.tn/2026/07/27/electricite-les-coupures-se-poursuivront-malgre-la-baisse-des-temperatures/",
    "via": "scraper",
    "fetched_at": "2026-07-27T12:25:08+01:00"
-  },
-  {
-   "date": "2026-07-26",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Des jours sans courant, des rues bloquées : Tripoli explose de colère face à la crise électrique",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/26/des-jours-sans-courant-des-rues-bloquees-tripoli-explose-de-colere-face-a-la-crise-electrique/",
-   "via": "scraper",
-   "fetched_at": "2026-07-26T16:17:41+01:00"
-  },
-  {
-   "date": "2026-07-26",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Électricité : Derrière les annonces marocaines, où en sont réellement les grands projets ?",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/international/electricite-derriere-les-annonces-marocaines-ou-en-sont-reellement-les-grands-projets/401637/",
-   "via": "scraper",
-   "fetched_at": "2026-07-26T10:35:41+01:00"
   }
  ]
 }

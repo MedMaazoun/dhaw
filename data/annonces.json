@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-28T17:21:54+01:00",
+ "generated_at": "2026-07-28T18:55:56+01:00",
  "items": [
+  {
+   "date": "2026-07-28",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Pourquoi : Le photovoltaïque…",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/28/pourquoi-le-photovoltaique/",
+   "via": "scraper",
+   "fetched_at": "2026-07-28T18:55:56+01:00"
+  },
   {
    "date": "2026-07-28",
    "start": "00:00",
@@ -180,19 +193,6 @@
    "ids": [],
    "source": "Webdo",
    "url": "https://www.webdo.tn/fr/actualite/regions/coupures-deau-a-mahdia-et-sfax-apres-une-coupure-delectricite/401656/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T12:25:08+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "ARP : une séance plénière prévue aujourd’hui sur les coupures d’eau et d’électricité",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/27/arp-une-seance-pleniere-prevue-aujourdhui-sur-les-coupures-deau-et-delectricite/",
    "via": "scraper",
    "fetched_at": "2026-07-27T12:25:08+01:00"
   }

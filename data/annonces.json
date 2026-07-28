@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-28T13:04:33+01:00",
+ "generated_at": "2026-07-28T15:32:13+01:00",
  "items": [
+  {
+   "date": "2026-07-28",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Électricité : Le gouvernement étudie une feuille de route pour renforcer la stabilité du réseau l’été prochain",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/electricite-le-gouvernement-etudie-une-feuille-de-route-pour-renforcer-la-stabilite-du-reseau-lete-prochain/401744/",
+   "via": "scraper",
+   "fetched_at": "2026-07-28T15:32:13+01:00"
+  },
   {
    "date": "2026-07-28",
    "start": "00:00",
@@ -180,19 +193,6 @@
    "ids": [],
    "source": "La Presse",
    "url": "https://www.lapresse.tn/2026/07/27/arp-une-seance-pleniere-prevue-aujourdhui-sur-les-coupures-deau-et-delectricite/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T12:25:08+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Électricité : les coupures se poursuivront malgré la baisse des températures",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/27/electricite-les-coupures-se-poursuivront-malgre-la-baisse-des-temperatures/",
    "via": "scraper",
    "fetched_at": "2026-07-27T12:25:08+01:00"
   }

@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-07-29T12:36:20+01:00",
+ "generated_at": "2026-07-29T14:22:02+01:00",
  "items": [
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Eau minérale en bouteille : les pannes d’électricité et les fortes chaleurs à l’origine de la pénurie",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/29/eau-minerale-en-bouteille-les-pannes-delectricite-et-les-fortes-chaleurs-a-lorigine-de-la-penurie/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T14:22:02+01:00"
+  },
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupure d’électricité : le centre de maternité et de néonatologie de Wassila Bourguiba dément tout impact sur ",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/29/coupure-delectricite-le-centre-de-maternite-et-de-neonatologie-de-wassila-bourguiba-dement-tout-impact-sur-la-sante-des-nourrissons/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T14:22:02+01:00"
+  },
   {
    "date": "2026-07-29",
    "start": "00:00",
@@ -169,32 +195,6 @@
    "url": "https://www.webdo.tn/fr/actualite/national/tunisie-une-motion-de-censure-contre-le-gouvernement-en-preparation-selon-le-depute-ali-zaghdoud/401689/",
    "via": "scraper",
    "fetched_at": "2026-07-27T19:06:10+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "L’ARP à l’heure des comptes",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/27/larp-a-lheure-des-comptes/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T17:22:26+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’eau et d’électricité dans les hôpitaux : 10 questions écrites adressées au ministre de la Santé",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/27/coupures-deau-et-delectricite-dans-les-hopitaux-10-questions-ecrites-adressees-au-ministre-de-la-sante/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T17:22:26+01:00"
   }
  ]
 }

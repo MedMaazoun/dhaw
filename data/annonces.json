@@ -1,6 +1,58 @@
 {
- "generated_at": "2026-07-29T10:17:46+01:00",
+ "generated_at": "2026-07-29T12:36:20+01:00",
  "items": [
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupure d’électricité à la Rabta : Le Centre de maternité nie tout impact sur les nouveau-nés",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupure-delectricite-a-la-rabta-le-centre-de-maternite-nie-tout-impact-sur-les-nouveau-nes/401814/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T12:36:20+01:00"
+  },
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Électricité : un second transformateur géant de 400 MVA venu de Chine pour renforcer le réseau tunisien",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/29/electricite-un-second-transformateur-geant-de-400-mva-venu-de-chine-pour-renforcer-le-reseau-tunisien/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T12:36:20+01:00"
+  },
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Restaurants touristiques : des pertes estimées à 50 000 dinars pour chaque établissement en raison des coupure",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/29/restaurants-touristiques-des-pertes-estimees-a-50-000-dinars-pour-chaque-etablissement-en-raison-des-coupures-delectricite/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T12:36:20+01:00"
+  },
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Aucun hôpital n’a été affecté par des coupures d’électricité, affirme le ministère de la Santé",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/29/aucun-hopital-na-ete-affecte-par-des-coupures-delectricite-affirme-le-ministere-de-la-sante/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T12:36:20+01:00"
+  },
   {
    "date": "2026-07-29",
    "start": "00:00",
@@ -143,58 +195,6 @@
    "url": "https://www.lapresse.tn/2026/07/27/coupures-deau-et-delectricite-dans-les-hopitaux-10-questions-ecrites-adressees-au-ministre-de-la-sante/",
    "via": "scraper",
    "fetched_at": "2026-07-27T17:22:26+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Coupures d’électricité : 70% des restaurants touchés, l’UTICA alerte sur des pertes importantes",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-70-des-restaurants-touches-lutica-alerte-sur-des-pertes-importantes/401684/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T14:54:15+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’eau et d’électricité : Le Président de l’ARP appelle à surmonter la crise par les réformes",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/27/coupures-deau-et-delectricite-le-president-de-larp-appelle-a-surmonter-la-crise-par-les-reformes/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T14:54:15+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "L’ARP débat des coupures d’eau et d’électricité",
-   "zones": "",
-   "ids": [],
-   "source": "Tunisie Tribune",
-   "url": "https://www.tunisie-tribune.com/2026/07/27/larp-debat-des-coupures-deau-et-delectricite/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T14:54:15+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’eau et d’électricité : L’ARP ouvre le débat et interpelle les autorités",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-deau-et-delectricite-larp-ouvre-le-debat-et-interpelle-les-autorites/401678/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T12:25:08+01:00"
   }
  ]
 }

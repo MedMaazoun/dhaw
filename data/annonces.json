@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-29T23:38:27+01:00",
+ "generated_at": "2026-07-30T00:41:12+01:00",
  "items": [
   {
    "date": "2026-07-29",
@@ -182,19 +182,6 @@
    "url": "https://www.webdo.tn/fr/actualite/national/tunisie-la-penurie-deau-minerale-risque-de-sinstaller-dans-la-duree-alerte-une-ong/401712/",
    "via": "scraper",
    "fetched_at": "2026-07-28T08:14:30+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Conséquences des délestages en Tunisie : La durée de vie des appareils ménagers et électroniques menacée",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/27/consequences-des-delestages-en-tunisie-la-duree-de-vie-des-appareils-menagers-et-electroniques-menacee/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T22:12:09+01:00"
   }
  ]
 }

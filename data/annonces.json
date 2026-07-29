@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-29T07:17:57+01:00",
+ "generated_at": "2026-07-29T10:17:46+01:00",
  "items": [
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : L’UTAP hausse le ton contre la STEG après les pertes agricoles",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-lutap-hausse-le-ton-contre-la-steg-apres-les-pertes-agricoles/401788/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T10:17:46+01:00"
+  },
   {
    "date": "2026-07-28",
    "start": "00:00",
@@ -180,19 +193,6 @@
    "ids": [],
    "source": "Webdo",
    "url": "https://www.webdo.tn/fr/actualite/national/coupures-deau-et-delectricite-larp-ouvre-le-debat-et-interpelle-les-autorites/401678/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T12:25:08+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Coupures d’eau à Mahdia et Sfax après une coupure d’électricité",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/regions/coupures-deau-a-mahdia-et-sfax-apres-une-coupure-delectricite/401656/",
    "via": "scraper",
    "fetched_at": "2026-07-27T12:25:08+01:00"
   }

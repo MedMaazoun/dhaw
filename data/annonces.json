@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-29T19:08:41+01:00",
+ "generated_at": "2026-07-29T20:42:09+01:00",
  "items": [
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Pourquoi : Dédommagements",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/29/pourquoi-dedommagements/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T20:42:09+01:00"
+  },
   {
    "date": "2026-07-29",
    "start": "00:00",
@@ -182,19 +195,6 @@
    "url": "https://www.lapresse.tn/2026/07/27/consequences-des-delestages-en-tunisie-la-duree-de-vie-des-appareils-menagers-et-electroniques-menacee/",
    "via": "scraper",
    "fetched_at": "2026-07-27T22:12:09+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Tunisie – Délestage : Cet expert explique pourquoi la baisse des températures ne changera rien !",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/tunisie-delestage-cet-expert-explique-pourquoi-la-baisse-des-temperatures-ne-changera-rien/401691/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T19:06:10+01:00"
   }
  ]
 }

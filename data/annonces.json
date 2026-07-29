@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-29T16:30:22+01:00",
+ "generated_at": "2026-07-29T17:55:29+01:00",
  "items": [
+  {
+   "date": "2026-07-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Bouteilles d’eau introuvables : ce qui explique les tensions d’approvisionnement en Tunisie",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/29/bouteilles-deau-introuvables-ce-qui-explique-les-tensions-dapprovisionnement-en-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-07-29T17:55:29+01:00"
+  },
   {
    "date": "2026-07-29",
    "start": "00:00",
@@ -180,19 +193,6 @@
    "ids": [],
    "source": "Webdo",
    "url": "https://www.webdo.tn/fr/actualite/national/tunisie-delestage-cet-expert-explique-pourquoi-la-baisse-des-temperatures-ne-changera-rien/401691/",
-   "via": "scraper",
-   "fetched_at": "2026-07-27T19:06:10+01:00"
-  },
-  {
-   "date": "2026-07-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Tunisie : Une motion de censure contre le gouvernement en préparation, selon le député Ali Zaghdoud",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/tunisie-une-motion-de-censure-contre-le-gouvernement-en-preparation-selon-le-depute-ali-zaghdoud/401689/",
    "via": "scraper",
    "fetched_at": "2026-07-27T19:06:10+01:00"
   }

@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-30T10:21:23+01:00",
+ "generated_at": "2026-07-30T12:29:25+01:00",
  "items": [
+  {
+   "date": "2026-07-30",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Congelés, décongelés, recongelés ? Gare à certains produits alimentaires !",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/congeles-decongeles-recongeles-gare-a-certains-produits-alimentaires/401917/",
+   "via": "scraper",
+   "fetched_at": "2026-07-30T12:29:25+01:00"
+  },
   {
    "date": "2026-07-30",
    "start": "00:00",
@@ -180,19 +193,6 @@
    "ids": [],
    "source": "Webdo",
    "url": "https://www.webdo.tn/fr/actualite/national/batteries-solaires-en-tunisie-une-fausse-solution-face-a-une-crise-electrique-structurelle/401727/",
-   "via": "scraper",
-   "fetched_at": "2026-07-28T10:59:04+01:00"
-  },
-  {
-   "date": "2026-07-28",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Chaos en Libye : Des groupes ferment les conduites de gaz et font planer le risque d’un black-out électrique",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/international/chaos-en-libye-des-groupes-ferment-les-conduites-de-gaz-et-font-planer-le-risque-dun-black-out-electrique/401716/",
    "via": "scraper",
    "fetched_at": "2026-07-28T10:59:04+01:00"
   }

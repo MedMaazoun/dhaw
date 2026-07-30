@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-30T23:36:00+01:00",
+ "generated_at": "2026-07-31T00:39:50+01:00",
  "items": [
   {
    "date": "2026-07-30",
@@ -156,45 +156,6 @@
    "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-lutap-hausse-le-ton-contre-la-steg-apres-les-pertes-agricoles/401788/",
    "via": "scraper",
    "fetched_at": "2026-07-29T10:17:46+01:00"
-  },
-  {
-   "date": "2026-07-28",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Pourquoi : Le photovoltaïque…",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/28/pourquoi-le-photovoltaique/",
-   "via": "scraper",
-   "fetched_at": "2026-07-28T18:55:56+01:00"
-  },
-  {
-   "date": "2026-07-28",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Électricité : Le gouvernement étudie une feuille de route pour renforcer la stabilité du réseau l’été prochain",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/electricite-le-gouvernement-etudie-une-feuille-de-route-pour-renforcer-la-stabilite-du-reseau-lete-prochain/401744/",
-   "via": "scraper",
-   "fetched_at": "2026-07-28T15:32:13+01:00"
-  },
-  {
-   "date": "2026-07-28",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Batteries solaires en Tunisie : Une fausse solution face à une crise électrique structurelle ?",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/batteries-solaires-en-tunisie-une-fausse-solution-face-a-une-crise-electrique-structurelle/401727/",
-   "via": "scraper",
-   "fetched_at": "2026-07-28T10:59:04+01:00"
   }
  ]
 }

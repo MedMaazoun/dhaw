@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-30T05:16:17+01:00",
+ "generated_at": "2026-07-30T07:45:33+01:00",
  "items": [
+  {
+   "date": "2026-07-30",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Canicule en Tunisie : Les syndicats de la santé appellent à décréter l’urgence sanitaire",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/canicule-en-tunisie-les-syndicats-de-la-sante-appellent-a-decreter-lurgence-sanitaire/401901/",
+   "via": "scraper",
+   "fetched_at": "2026-07-30T07:45:33+01:00"
+  },
   {
    "date": "2026-07-29",
    "start": "00:00",

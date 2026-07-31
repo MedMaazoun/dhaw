@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-07-31T13:22:58+01:00",
+ "generated_at": "2026-07-31T15:59:17+01:00",
  "items": [
+  {
+   "date": "2026-07-31",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité, bornes hors service, longues files d’attente… : le calvaire des propriétaires de voitu",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/07/31/coupures-delectricite-bornes-hors-service-longues-files-dattente-le-calvaire-des-proprietaires-de-voitures-electriques/",
+   "via": "scraper",
+   "fetched_at": "2026-07-31T15:59:17+01:00"
+  },
   {
    "date": "2026-07-31",
    "start": "00:00",

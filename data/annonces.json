@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T22:57:57+01:00",
+ "generated_at": "2026-08-02T00:01:42+01:00",
  "items": [
   {
    "date": "2026-08-01",
@@ -39,45 +39,6 @@
    "url": "https://www.webdo.tn/fr/actualite/national/delestages-le-mercure-repart-a-la-hausse-linquietude-monte-chez-les-tunisiens/401966/",
    "via": "scraper",
    "fetched_at": "2026-07-31T13:22:58+01:00"
-  },
-  {
-   "date": "2026-07-30",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Congelés, décongelés, recongelés ? Gare à certains produits alimentaires !",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/congeles-decongeles-recongeles-gare-a-certains-produits-alimentaires/401917/",
-   "via": "scraper",
-   "fetched_at": "2026-07-30T12:29:25+01:00"
-  },
-  {
-   "date": "2026-07-30",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Réseau électrique : Les compteurs intelligents, une réponse aux coupures de courant ?",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/reseau-electrique-les-compteurs-intelligents-une-reponse-aux-coupures-de-courant/401910/",
-   "via": "scraper",
-   "fetched_at": "2026-07-30T10:21:23+01:00"
-  },
-  {
-   "date": "2026-07-30",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Canicule en Tunisie : Les syndicats de la santé appellent à décréter l’urgence sanitaire",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/canicule-en-tunisie-les-syndicats-de-la-sante-appellent-a-decreter-lurgence-sanitaire/401901/",
-   "via": "scraper",
-   "fetched_at": "2026-07-30T07:45:33+01:00"
   }
  ]
 }

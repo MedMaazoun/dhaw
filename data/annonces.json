@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-01T13:10:38+01:00",
+ "generated_at": "2026-08-01T15:00:34+01:00",
  "items": [
+  {
+   "date": "2026-08-01",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Eau embouteillée : les rayons devraient retrouver leur rythme normal dans les prochains jours",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/01/eau-embouteillee-les-rayons-devraient-retrouver-leur-rythme-normal-dans-les-prochains-jours/",
+   "via": "scraper",
+   "fetched_at": "2026-08-01T15:00:34+01:00"
+  },
   {
    "date": "2026-07-31",
    "start": "00:00",

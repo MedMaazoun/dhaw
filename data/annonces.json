@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-02T17:34:50+01:00",
+ "generated_at": "2026-08-02T18:41:37+01:00",
  "items": [
+  {
+   "date": "2026-08-02",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Production d’électricité : les investissements de la STEG chutent de 87 %, selon l’OTE",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/02/production-delectricite-les-investissements-de-la-steg-chutent-de-87-selon-lote/",
+   "via": "scraper",
+   "fetched_at": "2026-08-02T18:41:37+01:00"
+  },
   {
    "date": "2026-08-01",
    "start": "00:00",

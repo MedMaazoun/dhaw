@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-02T23:07:56+01:00",
+ "generated_at": "2026-08-03T00:09:58+01:00",
  "items": [
   {
    "date": "2026-08-02",
@@ -26,32 +26,6 @@
    "url": "https://www.lapresse.tn/2026/08/01/eau-embouteillee-les-rayons-devraient-retrouver-leur-rythme-normal-dans-les-prochains-jours/",
    "via": "scraper",
    "fetched_at": "2026-08-01T15:00:34+01:00"
-  },
-  {
-   "date": "2026-07-31",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité, bornes hors service, longues files d’attente… : le calvaire des propriétaires de voitu",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/07/31/coupures-delectricite-bornes-hors-service-longues-files-dattente-le-calvaire-des-proprietaires-de-voitures-electriques/",
-   "via": "scraper",
-   "fetched_at": "2026-07-31T15:59:17+01:00"
-  },
-  {
-   "date": "2026-07-31",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Délestages : Le mercure repart à la hausse, l’inquiétude monte chez les Tunisiens",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/delestages-le-mercure-repart-a-la-hausse-linquietude-monte-chez-les-tunisiens/401966/",
-   "via": "scraper",
-   "fetched_at": "2026-07-31T13:22:58+01:00"
   }
  ]
 }

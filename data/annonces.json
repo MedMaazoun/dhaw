@@ -1,6 +1,62 @@
 {
- "generated_at": "2026-08-03T11:59:50+01:00",
+ "generated_at": "2026-08-03T14:46:17+01:00",
  "items": [
+  {
+   "date": "2026-08-03",
+   "start": "12:00",
+   "end": "17:00",
+   "type": "Délestage tournant",
+   "titre": "Retour des délestages : La STEG annonce de nouvelles coupures tournantes ce lundi",
+   "zones": "mahdia, monastir, nabeul",
+   "ids": [
+    "TN321",
+    "TN151",
+    "TN331"
+   ],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/retour-des-delestages-la-steg-annonce-de-nouvelles-coupures-tournantes-ce-lundi/402097/",
+   "via": "scraper",
+   "fetched_at": "2026-08-03T14:46:17+01:00"
+  },
+  {
+   "date": "2026-08-03",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : voici la liste complète des régions concernées",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/03/coupures-delectricite-voici-la-liste-complete-des-regions-concernees/",
+   "via": "scraper",
+   "fetched_at": "2026-08-03T14:46:17+01:00"
+  },
+  {
+   "date": "2026-08-03",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Nabeul : la STEG annonce des coupures d’électricité ce lundi dans ces régions",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/03/nabeul-la-steg-annonce-des-coupures-delectricite-ce-lundi-dans-ces-regions/",
+   "via": "scraper",
+   "fetched_at": "2026-08-03T14:46:17+01:00"
+  },
+  {
+   "date": "2026-08-03",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Grand Tunis : voici les régions concernées par les coupures d’électricité ce lundi",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/03/grand-tunis-voici-les-regions-concernees-par-les-coupures-delectricite-ce-lundi/",
+   "via": "scraper",
+   "fetched_at": "2026-08-03T14:46:17+01:00"
+  },
   {
    "date": "2026-08-03",
    "start": "00:00",

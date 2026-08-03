@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-03T08:40:53+01:00",
+ "generated_at": "2026-08-03T11:59:50+01:00",
  "items": [
+  {
+   "date": "2026-08-03",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Panne du réseau électrique : Cuba plongé dans le noir total",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/03/panne-du-reseau-electrique-cuba-plonge-dans-le-noir-total/",
+   "via": "scraper",
+   "fetched_at": "2026-08-03T11:59:50+01:00"
+  },
   {
    "date": "2026-08-03",
    "start": "00:00",

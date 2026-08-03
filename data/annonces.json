@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-03T17:10:43+01:00",
+ "generated_at": "2026-08-03T19:11:53+01:00",
  "items": [
+  {
+   "date": "2026-08-03",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Y aura-t-il un retour des coupures d’électricité durant le reste de l’été en Tunisie ?",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/03/y-aura-t-il-un-retour-des-coupures-delectricite-durant-le-reste-de-lete-en-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-08-03T19:11:53+01:00"
+  },
   {
    "date": "2026-08-03",
    "start": "12:00",

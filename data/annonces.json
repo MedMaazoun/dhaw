@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-03T05:01:10+01:00",
+ "generated_at": "2026-08-03T08:40:53+01:00",
  "items": [
+  {
+   "date": "2026-08-03",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Délestage : Une plateforme énergétique basée à Washington annonce la fin des coupures programmées en Tunisie",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/delestage-une-plateforme-energetique-basee-a-washington-annonce-la-fin-des-coupures-programmees-en-tunisie/402076/",
+   "via": "scraper",
+   "fetched_at": "2026-08-03T08:40:53+01:00"
+  },
   {
    "date": "2026-08-02",
    "start": "00:00",

@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-04T18:00:42+01:00",
+ "generated_at": "2026-08-04T19:48:12+01:00",
  "items": [
+  {
+   "date": "2026-08-04",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Délestages : Jusqu’à 50 % des volailles perdues, des perturbations d’approvisionnement redoutées",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/les-delestages-frappent-la-filiere-avicole-jusqua-50-des-volailles-perdues-des-perturbations-dapprovisionnement-redoutees/402151/",
+   "via": "scraper",
+   "fetched_at": "2026-08-04T19:48:12+01:00"
+  },
   {
    "date": "2026-08-04",
    "start": "11:30",

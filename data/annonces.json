@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-08T19:02:00+01:00",
+ "generated_at": "2026-08-08T19:55:12+01:00",
  "items": [
+  {
+   "date": "2026-08-08",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Restaurants et coupures d’électricité : Le risque des intoxications alimentaires va crescendo !",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/08/restaurants-et-coupures-delectricite-le-risque-des-intoxications-alimentaires-va-crescendo/",
+   "via": "scraper",
+   "fetched_at": "2026-08-08T19:55:12+01:00"
+  },
   {
    "date": "2026-08-08",
    "start": "00:00",

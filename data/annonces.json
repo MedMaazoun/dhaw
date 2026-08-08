@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-08T15:32:57+01:00",
+ "generated_at": "2026-08-08T16:01:57+01:00",
  "items": [
+  {
+   "date": "2026-08-08",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité : 18.294 interventions de la STEG, mais la colère ne retombe pas",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-18-294-interventions-de-la-steg-mais-la-colere-ne-retombe-pas/402322/",
+   "via": "scraper",
+   "fetched_at": "2026-08-08T16:01:57+01:00"
+  },
   {
    "date": "2026-08-06",
    "start": "13:00",

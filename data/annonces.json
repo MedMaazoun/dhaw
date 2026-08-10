@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-10T23:38:32+01:00",
+ "generated_at": "2026-08-11T00:18:15+01:00",
  "items": [
   {
    "date": "2026-08-10",
@@ -15,32 +15,6 @@
    "url": "https://www.lapresse.tn/2026/08/10/alerte-steg-une-coupure-programmee-delectricite-prevue-demain-dans-ces-zones/",
    "via": "scraper",
    "fetched_at": "2026-08-10T19:06:41+01:00"
-  },
-  {
-   "date": "2026-08-08",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Restaurants et coupures d’électricité : Le risque des intoxications alimentaires va crescendo !",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/08/restaurants-et-coupures-delectricite-le-risque-des-intoxications-alimentaires-va-crescendo/",
-   "via": "scraper",
-   "fetched_at": "2026-08-08T19:55:12+01:00"
-  },
-  {
-   "date": "2026-08-08",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité : 18.294 interventions de la STEG, mais la colère ne retombe pas",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-18-294-interventions-de-la-steg-mais-la-colere-ne-retombe-pas/402322/",
-   "via": "scraper",
-   "fetched_at": "2026-08-08T16:01:57+01:00"
   }
  ]
 }

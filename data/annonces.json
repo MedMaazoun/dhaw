@@ -1,6 +1,21 @@
 {
- "generated_at": "2026-08-10T18:13:00+01:00",
+ "generated_at": "2026-08-10T19:06:41+01:00",
  "items": [
+  {
+   "date": "2026-08-10",
+   "start": "05:00",
+   "end": "12:00",
+   "type": "Coupure programmée",
+   "titre": "Alerte Steg : une coupure programmée d’électricité prévue demain dans ces zones",
+   "zones": "ghomrassen",
+   "ids": [
+    "TN535"
+   ],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/10/alerte-steg-une-coupure-programmee-delectricite-prevue-demain-dans-ces-zones/",
+   "via": "scraper",
+   "fetched_at": "2026-08-10T19:06:41+01:00"
+  },
   {
    "date": "2026-08-08",
    "start": "00:00",

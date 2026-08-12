@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-12T23:22:50+01:00",
+ "generated_at": "2026-08-13T00:11:10+01:00",
  "items": [
   {
    "date": "2026-08-12",
@@ -26,21 +26,6 @@
    "url": "https://www.lapresse.tn/2026/08/11/apres-la-canicule-de-lete-alerte-sur-un-automne-exceptionnel/",
    "via": "scraper",
    "fetched_at": "2026-08-11T18:36:29+01:00"
-  },
-  {
-   "date": "2026-08-10",
-   "start": "05:00",
-   "end": "12:00",
-   "type": "Coupure programmée",
-   "titre": "Alerte Steg : une coupure programmée d’électricité prévue demain dans ces zones",
-   "zones": "ghomrassen",
-   "ids": [
-    "TN535"
-   ],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/10/alerte-steg-une-coupure-programmee-delectricite-prevue-demain-dans-ces-zones/",
-   "via": "scraper",
-   "fetched_at": "2026-08-10T19:06:41+01:00"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-14T23:56:59+01:00",
+ "generated_at": "2026-08-15T00:27:31+01:00",
  "items": [
   {
    "date": "2026-08-14",
@@ -29,19 +29,6 @@
    "url": "https://www.lapresse.tn/2026/08/14/eaux-minerales-les-perturbations-dues-a-la-canicule-et-aux-coupures-delectricite-sont-temporaires-affirme-lotfi-riahi/",
    "via": "scraper",
    "fetched_at": "2026-08-14T14:56:40+01:00"
-  },
-  {
-   "date": "2026-08-12",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Canicule 2026 : Le cocktail toxique des coupures d’électricité, de la pénurie d’eau minérale et du plomb dilué",
-   "zones": "",
-   "ids": [],
-   "source": "Tunisie Tribune",
-   "url": "https://www.tunisie-tribune.com/2026/08/12/canicule-2026-le-cocktail-toxique-des-coupures-delectricite-de-la-penurie-deau-minerale-et-du-plomb-dilue-dans-leau-du-robinet/",
-   "via": "scraper",
-   "fetched_at": "2026-08-12T14:34:45+01:00"
   }
  ]
 }

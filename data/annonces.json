@@ -1,34 +1,4 @@
 {
- "generated_at": "2026-08-16T23:54:32+01:00",
- "items": [
-  {
-   "date": "2026-08-14",
-   "start": "07:00",
-   "end": "12:00",
-   "type": "Coupure programmée",
-   "titre": "La STEG annonce une coupure d’électricité dans ces zones demain",
-   "zones": "moknine, monastir",
-   "ids": [
-    "TN321",
-    "TN328"
-   ],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/14/la-steg-annonce-une-coupure-delectricite-dans-ces-zones-demain/",
-   "via": "scraper",
-   "fetched_at": "2026-08-14T20:10:25+01:00"
-  },
-  {
-   "date": "2026-08-14",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Eaux minérales : « Les perturbations dues à la canicule et aux coupures d’électricité sont temporaires », affi",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/14/eaux-minerales-les-perturbations-dues-a-la-canicule-et-aux-coupures-delectricite-sont-temporaires-affirme-lotfi-riahi/",
-   "via": "scraper",
-   "fetched_at": "2026-08-14T14:56:40+01:00"
-  }
- ]
+ "generated_at": "2026-08-17T00:20:48+01:00",
+ "items": []
 }

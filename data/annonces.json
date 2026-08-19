@@ -1,4 +1,44 @@
 {
- "generated_at": "2026-08-19T16:05:43+01:00",
- "items": []
+ "generated_at": "2026-08-19T16:44:07+01:00",
+ "items": [
+  {
+   "date": "2026-08-19",
+   "start": "13:30",
+   "end": "17:00",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : voici les zones concernées sur toute la Tunisie",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/19/coupures-delectricite-voici-les-zones-concernees-sur-toute-la-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-08-19T16:44:07+01:00"
+  },
+  {
+   "date": "2026-08-19",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : la liste des zones concernées dans le Cap Bon",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/19/coupures-delectricite-la-liste-des-zones-concernees-dans-le-cap-bon/",
+   "via": "scraper",
+   "fetched_at": "2026-08-19T16:44:07+01:00"
+  },
+  {
+   "date": "2026-08-19",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Alerte STEG : des coupures d’électricité dans plusieurs zones du Grand Tunis",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/19/alerte-steg-des-coupures-delectricite-dans-plusieurs-zones-du-grand-tunis/",
+   "via": "scraper",
+   "fetched_at": "2026-08-19T16:44:07+01:00"
+  }
+ ]
 }

@@ -1,6 +1,35 @@
 {
- "generated_at": "2026-08-19T16:44:07+01:00",
+ "generated_at": "2026-08-19T17:13:26+01:00",
  "items": [
+  {
+   "date": "2026-08-19",
+   "start": "13:30",
+   "end": "17:00",
+   "type": "Délestage tournant",
+   "titre": "Électricité : La STEG annonce de nouvelles coupures tournantes ce mercredi",
+   "zones": "agareb, akouda, bouficha, bouhajla, el amra, el hencha, enfidha, hammam sousse, hergla, mahres, menzel chaker, nasrallah, sakiet ezzit, sfax ouest, sfax ville",
+   "ids": [
+    "TN315",
+    "TN34B",
+    "TN343",
+    "TN341",
+    "TN342",
+    "TN34A",
+    "TN419",
+    "TN41B",
+    "TN31B",
+    "TN31A",
+    "TN349",
+    "TN319",
+    "TN34F",
+    "TN316",
+    "TN347"
+   ],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/electricite-la-steg-annonce-de-nouvelles-coupures-tournantes-ce-mercredi/402769/",
+   "via": "scraper",
+   "fetched_at": "2026-08-19T17:13:26+01:00"
+  },
   {
    "date": "2026-08-19",
    "start": "13:30",

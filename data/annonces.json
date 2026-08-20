@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-20T15:45:31+01:00",
+ "generated_at": "2026-08-20T16:18:38+01:00",
  "items": [
+  {
+   "date": "2026-08-20",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "L’expert énergétique Foued Ali : « Les délestages de la STEG ne sont pas seulement liés à la canicule » !",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/20/lexpert-energetique-foued-ali-les-delestages-de-la-steg-ne-sont-pas-seulement-lies-a-la-canicule/",
+   "via": "scraper",
+   "fetched_at": "2026-08-20T16:18:38+01:00"
+  },
   {
    "date": "2026-08-20",
    "start": "13:30",

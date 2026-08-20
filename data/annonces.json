@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-20T08:03:11+01:00",
+ "generated_at": "2026-08-20T08:53:34+01:00",
  "items": [
+  {
+   "date": "2026-08-20",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : Au-delà de la canicule, le spectre d’une crise structurelle du système énergétique tu",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-au-dela-de-la-canicule-le-spectre-dune-crise-structurelle-du-systeme-energetique-tunisien/402788/",
+   "via": "scraper",
+   "fetched_at": "2026-08-20T08:53:34+01:00"
+  },
   {
    "date": "2026-08-19",
    "start": "13:30",

@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-08-21T17:15:04+01:00",
+ "generated_at": "2026-08-21T17:55:50+01:00",
  "items": [
+  {
+   "date": "2026-08-21",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Alerte STEG : coupure d’électricité dimanche dans ces zones",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/21/alerte-steg-coupure-delectricite-dimanche-dans-ces-zones/",
+   "via": "scraper",
+   "fetched_at": "2026-08-21T17:55:50+01:00"
+  },
+  {
+   "date": "2026-08-21",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Eau : de la pénurie à la crise de confiance",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/21/eau-de-la-penurie-a-la-crise-de-confiance/",
+   "via": "scraper",
+   "fetched_at": "2026-08-21T17:55:50+01:00"
+  },
   {
    "date": "2026-08-20",
    "start": "00:00",

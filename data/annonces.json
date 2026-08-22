@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-22T23:48:54+01:00",
+ "generated_at": "2026-08-23T00:07:42+01:00",
  "items": [
   {
    "date": "2026-08-22",
@@ -52,84 +52,6 @@
    "url": "https://www.lapresse.tn/2026/08/21/eau-de-la-penurie-a-la-crise-de-confiance/",
    "via": "scraper",
    "fetched_at": "2026-08-21T17:55:50+01:00"
-  },
-  {
-   "date": "2026-08-20",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "L’expert énergétique Foued Ali : « Les délestages de la STEG ne sont pas seulement liés à la canicule » !",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/20/lexpert-energetique-foued-ali-les-delestages-de-la-steg-ne-sont-pas-seulement-lies-a-la-canicule/",
-   "via": "scraper",
-   "fetched_at": "2026-08-20T16:18:38+01:00"
-  },
-  {
-   "date": "2026-08-20",
-   "start": "13:30",
-   "end": "17:00",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité : voici la liste totale des zones concernées dans toute la Tunisie",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/20/coupures-delectricite-voici-la-liste-totale-des-zones-concernees-dans-toute-la-tunisie/",
-   "via": "scraper",
-   "fetched_at": "2026-08-20T14:58:51+01:00"
-  },
-  {
-   "date": "2026-08-20",
-   "start": "13:30",
-   "end": "17:00",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité au Cap Bon : voici les zones concernées",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/20/coupures-delectricite-au-cap-bon-voici-les-zones-concernees/",
-   "via": "scraper",
-   "fetched_at": "2026-08-20T14:58:51+01:00"
-  },
-  {
-   "date": "2026-08-20",
-   "start": "13:30",
-   "end": "17:00",
-   "type": "Coupure programmée",
-   "titre": "Grand Tunis : voici les zones concernées par les coupures d’électricité ce jeudi",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/20/grand-tunis-voici-les-zones-concernees-par-les-coupures-delectricite-ce-jeudi-2/",
-   "via": "scraper",
-   "fetched_at": "2026-08-20T14:58:51+01:00"
-  },
-  {
-   "date": "2026-08-20",
-   "start": "13:30",
-   "end": "17:00",
-   "type": "Délestage tournant",
-   "titre": "Délestage en Tunisie : Plusieurs régions concernées par des coupures ce jeudi",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/delestage-en-tunisie-plusieurs-regions-concernees-par-des-coupures-ce-jeudi/402823/",
-   "via": "scraper",
-   "fetched_at": "2026-08-20T14:08:47+01:00"
-  },
-  {
-   "date": "2026-08-20",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Coupures d’électricité : Au-delà de la canicule, le spectre d’une crise structurelle du système énergétique tu",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-au-dela-de-la-canicule-le-spectre-dune-crise-structurelle-du-systeme-energetique-tunisien/402788/",
-   "via": "scraper",
-   "fetched_at": "2026-08-20T08:53:34+01:00"
   }
  ]
 }

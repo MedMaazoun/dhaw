@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-22T09:51:27+01:00",
+ "generated_at": "2026-08-22T10:27:20+01:00",
  "items": [
+  {
+   "date": "2026-08-22",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Le P-DG de la STEG : “ Les coupures d’électricité ne dépassent pas une heure ”",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/22/le-p-dg-de-la-steg-les-coupures-delectricite-ne-depassent-pas-une-heure/",
+   "via": "scraper",
+   "fetched_at": "2026-08-22T10:27:20+01:00"
+  },
   {
    "date": "2026-08-21",
    "start": "00:00",

@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-23T13:58:56+01:00",
+ "generated_at": "2026-08-23T14:38:56+01:00",
  "items": [
+  {
+   "date": "2026-08-23",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Tunisie: les coupures d’électricité retardent la livraison des nouveaux uniformes de l’armée néerlandaise",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/23/tunisie-les-coupures-delectricite-retardent-la-livraison-des-nouveaux-uniformes-de-larmee-neerlandaise/",
+   "via": "scraper",
+   "fetched_at": "2026-08-23T14:38:56+01:00"
+  },
   {
    "date": "2026-08-23",
    "start": "00:00",

@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-23T10:54:28+01:00",
+ "generated_at": "2026-08-23T11:25:18+01:00",
  "items": [
+  {
+   "date": "2026-08-23",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Kaïs Saïed à Kairouan, Sousse et Mahdia : « Les coupures d’eau et d’électricité ne sont pas normales »",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/23/kais-saied-a-kairouan-sousse-et-mahdia-leau-les-coupures-et-la-reddition-des-comptes-au-coeur-de-sa-tournee/",
+   "via": "scraper",
+   "fetched_at": "2026-08-23T11:25:18+01:00"
+  },
   {
    "date": "2026-08-22",
    "start": "00:00",

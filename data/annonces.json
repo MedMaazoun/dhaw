@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-24T15:00:09+01:00",
+ "generated_at": "2026-08-24T15:53:13+01:00",
  "items": [
+  {
+   "date": "2026-08-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Uniformes de l’armée néerlandaise : le textile tunisien dément tout lien avec les coupures d’électricité",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/24/uniformes-de-larmee-neerlandaise-le-textile-tunisien-dement-tout-lien-avec-les-coupures-delectricite/",
+   "via": "scraper",
+   "fetched_at": "2026-08-24T15:53:13+01:00"
+  },
   {
    "date": "2026-08-24",
    "start": "00:00",

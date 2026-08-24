@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-24T23:47:30+01:00",
+ "generated_at": "2026-08-25T00:10:40+01:00",
  "items": [
   {
    "date": "2026-08-24",
@@ -132,32 +132,6 @@
    "url": "https://www.lapresse.tn/2026/08/23/kais-saied-a-kairouan-sousse-et-mahdia-leau-les-coupures-et-la-reddition-des-comptes-au-coeur-de-sa-tournee/",
    "via": "scraper",
    "fetched_at": "2026-08-23T11:25:18+01:00"
-  },
-  {
-   "date": "2026-08-22",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Pays-Bas : La canicule tunisienne retarde les uniformes de l’armée",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/divers/pays-bas-la-canicule-tunisienne-retarde-les-uniformes-de-larmee/402919/",
-   "via": "scraper",
-   "fetched_at": "2026-08-22T13:41:12+01:00"
-  },
-  {
-   "date": "2026-08-22",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Le P-DG de la STEG : “ Les coupures d’électricité ne dépassent pas une heure ”",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/22/le-p-dg-de-la-steg-les-coupures-delectricite-ne-depassent-pas-une-heure/",
-   "via": "scraper",
-   "fetched_at": "2026-08-22T10:27:20+01:00"
   }
  ]
 }

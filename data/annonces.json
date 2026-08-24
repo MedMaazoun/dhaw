@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-08-24T10:24:04+01:00",
+ "generated_at": "2026-08-24T11:10:56+01:00",
  "items": [
+  {
+   "date": "2026-08-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Tourisme : les coupures d’électricité désormais mentionnées dans les conseils aux voyageurs européens en Tunis",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/24/tourisme-les-coupures-delectricite-desormais-mentionnees-dans-les-conseils-aux-voyageurs-europeens-en-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-08-24T11:10:56+01:00"
+  },
+  {
+   "date": "2026-08-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Alerte SONEDE : des coupures d’eau potable dans ces zones",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/24/alerte-sonede-des-coupures-deau-potable-dans-ces-zones/",
+   "via": "scraper",
+   "fetched_at": "2026-08-24T11:10:56+01:00"
+  },
   {
    "date": "2026-08-23",
    "start": "00:00",

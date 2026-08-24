@@ -1,6 +1,47 @@
 {
- "generated_at": "2026-08-24T12:59:22+01:00",
+ "generated_at": "2026-08-24T14:06:39+01:00",
  "items": [
+  {
+   "date": "2026-08-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupure d’électricité : voici la liste des zones concernées dans toute la Tunisie",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/24/coupure-delectricite-voici-la-liste-des-zones-concernees-dans-toute-la-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-08-24T14:06:39+01:00"
+  },
+  {
+   "date": "2026-08-24",
+   "start": "13:00",
+   "end": "17:00",
+   "type": "Coupure programmée",
+   "titre": "Cap Bon : ces villes concernées par des coupures d’électricité ce lundi",
+   "zones": "nabeul",
+   "ids": [
+    "TN151"
+   ],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/24/cap-bon-ces-villes-concernees-par-des-coupures-delectricite-ce-lundi/",
+   "via": "scraper",
+   "fetched_at": "2026-08-24T14:06:39+01:00"
+  },
+  {
+   "date": "2026-08-24",
+   "start": "13:00",
+   "end": "17:00",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité : voici les zones concernées dans le Grand Tunis",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/24/coupures-delectricite-voici-les-zones-concernees-dans-le-grand-tunis/",
+   "via": "scraper",
+   "fetched_at": "2026-08-24T14:06:39+01:00"
+  },
   {
    "date": "2026-08-24",
    "start": "00:00",

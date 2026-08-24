@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-08-24T19:56:36+01:00",
+ "generated_at": "2026-08-24T20:33:57+01:00",
  "items": [
+  {
+   "date": "2026-08-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Alerte STEG : voici les zones concernées par les coupures d’électricité ce soir dans toute la Tunisie",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/24/alerte-steg-voici-les-zones-concernees-par-les-coupures-delectricite-ce-soir-dans-toute-la-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-08-24T20:33:57+01:00"
+  },
+  {
+   "date": "2026-08-24",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Grand Tunis : des coupures d’électricité possibles ce soir entre 22h et minuit",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/24/grand-tunis-des-coupures-delectricite-possibles-ce-soir-entre-22h-et-minuit/",
+   "via": "scraper",
+   "fetched_at": "2026-08-24T20:33:57+01:00"
+  },
   {
    "date": "2026-08-24",
    "start": "00:00",

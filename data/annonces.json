@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-08-25T20:03:57+01:00",
+ "generated_at": "2026-08-25T20:42:54+01:00",
  "items": [
+  {
+   "date": "2026-08-25",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité ce soir : voici la liste complète des zones concernées dans toute la Tunisie",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/25/coupures-delectricite-ce-soir-voici-la-liste-complete-des-zones-concernees-dans-toute-la-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-08-25T20:42:54+01:00"
+  },
+  {
+   "date": "2026-08-25",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité : plusieurs zones du Grand Tunis concernées ce soir",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/25/coupures-delectricite-plusieurs-zones-du-grand-tunis-concernees-ce-soir/",
+   "via": "scraper",
+   "fetched_at": "2026-08-25T20:42:54+01:00"
+  },
   {
    "date": "2026-08-25",
    "start": "00:00",
@@ -222,32 +248,6 @@
    "url": "https://www.lapresse.tn/2026/08/24/tourisme-les-coupures-delectricite-desormais-mentionnees-dans-les-conseils-aux-voyageurs-europeens-en-tunisie/",
    "via": "scraper",
    "fetched_at": "2026-08-24T11:10:56+01:00"
-  },
-  {
-   "date": "2026-08-24",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Alerte SONEDE : des coupures d’eau potable dans ces zones",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/24/alerte-sonede-des-coupures-deau-potable-dans-ces-zones/",
-   "via": "scraper",
-   "fetched_at": "2026-08-24T11:10:56+01:00"
-  },
-  {
-   "date": "2026-08-23",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Tunisie: les coupures d’électricité retardent la livraison des nouveaux uniformes de l’armée néerlandaise",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/23/tunisie-les-coupures-delectricite-retardent-la-livraison-des-nouveaux-uniformes-de-larmee-neerlandaise/",
-   "via": "scraper",
-   "fetched_at": "2026-08-23T14:38:56+01:00"
   }
  ]
 }

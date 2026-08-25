@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-25T16:45:57+01:00",
+ "generated_at": "2026-08-25T17:20:09+01:00",
  "items": [
+  {
+   "date": "2026-08-25",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Canicule dès mercredi : la STEG appelle à limiter les climatiseurs pour éviter les coupures",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/25/canicule-des-mercredi-la-steg-appelle-a-limiter-les-climatiseurs-pour-eviter-les-coupures/",
+   "via": "scraper",
+   "fetched_at": "2026-08-25T17:20:09+01:00"
+  },
   {
    "date": "2026-08-25",
    "start": "13:00",

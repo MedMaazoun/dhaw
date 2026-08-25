@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-08-25T18:02:20+01:00",
+ "generated_at": "2026-08-25T18:42:59+01:00",
  "items": [
+  {
+   "date": "2026-08-25",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Tunisie : un incendie dans une station électrique provoque des coupures dans plusieurs régions de Mahdia",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/25/tunisie-un-incendie-dans-une-station-electrique-provoque-des-coupures-dans-plusieurs-regions-de-mahdia/",
+   "via": "scraper",
+   "fetched_at": "2026-08-25T18:42:59+01:00"
+  },
+  {
+   "date": "2026-08-25",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Pénurie d’eau potable : Kaïs Saïed au contact des citoyens sur le terrain",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/25/penurie-deau-potable-kais-saied-au-contact-des-citoyens-sur-le-terrain/",
+   "via": "scraper",
+   "fetched_at": "2026-08-25T18:42:59+01:00"
+  },
   {
    "date": "2026-08-25",
    "start": "00:00",
@@ -222,19 +248,6 @@
    "url": "https://www.lapresse.tn/2026/08/23/tunisie-les-coupures-delectricite-retardent-la-livraison-des-nouveaux-uniformes-de-larmee-neerlandaise/",
    "via": "scraper",
    "fetched_at": "2026-08-23T14:38:56+01:00"
-  },
-  {
-   "date": "2026-08-23",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Kaïs Saïed à Kairouan, Sousse et Mahdia : « Les coupures d’eau et d’électricité ne sont pas normales »",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/23/kais-saied-a-kairouan-sousse-et-mahdia-leau-les-coupures-et-la-reddition-des-comptes-au-coeur-de-sa-tournee/",
-   "via": "scraper",
-   "fetched_at": "2026-08-23T11:25:18+01:00"
   }
  ]
 }

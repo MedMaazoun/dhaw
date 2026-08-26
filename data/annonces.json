@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-26T16:51:43+01:00",
+ "generated_at": "2026-08-26T17:48:50+01:00",
  "items": [
+  {
+   "date": "2026-08-26",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Pénurie d’eau minérale : La forte chaleur et les coupures d’électricité font bondir la demande de 30 %",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/26/penurie-deau-minerale-la-forte-chaleur-et-les-coupures-delectricite-font-bondir-la-demande-de-30/",
+   "via": "scraper",
+   "fetched_at": "2026-08-26T17:48:50+01:00"
+  },
   {
    "date": "2026-08-26",
    "start": "11:30",
@@ -300,19 +313,6 @@
    "url": "https://www.lapresse.tn/2026/08/24/grand-tunis-des-coupures-delectricite-possibles-ce-soir-entre-22h-et-minuit/",
    "via": "scraper",
    "fetched_at": "2026-08-24T20:33:57+01:00"
-  },
-  {
-   "date": "2026-08-24",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Uniformes de l’armée néerlandaise : le textile tunisien dément tout lien avec les coupures d’électricité",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/24/uniformes-de-larmee-neerlandaise-le-textile-tunisien-dement-tout-lien-avec-les-coupures-delectricite/",
-   "via": "scraper",
-   "fetched_at": "2026-08-24T15:53:13+01:00"
   }
  ]
 }

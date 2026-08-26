@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-26T08:05:31+01:00",
+ "generated_at": "2026-08-26T08:56:16+01:00",
  "items": [
+  {
+   "date": "2026-08-26",
+   "start": "13:00",
+   "end": "17:00",
+   "type": "Coupure programmée",
+   "titre": "La STEG anticipe des perturbations électriques avec l’arrivée d’une nouvelle vague de chaleur",
+   "zones": "",
+   "ids": [],
+   "source": "Gnet",
+   "url": "https://news.gnet.tn/la-steg-anticipe-des-perturbations-electriques-avec-larrivee-dune-nouvelle-vague-de-chaleur/",
+   "via": "scraper",
+   "fetched_at": "2026-08-26T08:56:16+01:00"
+  },
   {
    "date": "2026-08-25",
    "start": "00:00",
@@ -235,19 +248,6 @@
    "url": "https://www.lapresse.tn/2026/08/24/coupures-delectricite-voici-les-zones-concernees-dans-le-grand-tunis/",
    "via": "scraper",
    "fetched_at": "2026-08-24T14:06:39+01:00"
-  },
-  {
-   "date": "2026-08-24",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Tourisme : les coupures d’électricité désormais mentionnées dans les conseils aux voyageurs européens en Tunis",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/24/tourisme-les-coupures-delectricite-desormais-mentionnees-dans-les-conseils-aux-voyageurs-europeens-en-tunisie/",
-   "via": "scraper",
-   "fetched_at": "2026-08-24T11:10:56+01:00"
   }
  ]
 }

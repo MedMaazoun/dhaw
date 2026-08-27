@@ -1,6 +1,45 @@
 {
- "generated_at": "2026-08-27T11:57:45+01:00",
+ "generated_at": "2026-08-27T21:57:56+01:00",
  "items": [
+  {
+   "date": "2026-08-27",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "La Fédération de l’électricité et du gaz : les délestages seront hélas inévitables pour le reste de cet été 20",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/27/la-federation-de-lelectricite-et-du-gaz-les-delestages-seront-helas-inevitables-pour-le-reste-de-cet-ete-2026/",
+   "via": "scraper",
+   "fetched_at": "2026-08-27T21:57:56+01:00"
+  },
+  {
+   "date": "2026-08-27",
+   "start": "09:30",
+   "end": "18:00",
+   "type": "Coupure programmée",
+   "titre": "Grand Tunis : des coupures d’électricité périodiques possibles dans ces zones",
+   "zones": "ain zaghouan, ben arous, el menzah, ennasr, la goulette, la nouvelle medina, la soukra, le kram, manouba, megrine, mornag, rades",
+   "ids": [
+    "TN132",
+    "TN11L",
+    "TN11J",
+    "TN118",
+    "TN131",
+    "TN122",
+    "TN11K",
+    "TN141",
+    "TN139",
+    "TN13C",
+    "TN121",
+    "TN138"
+   ],
+   "source": "Gnet",
+   "url": "https://news.gnet.tn/grand-tunis-des-coupures-delectricite-periodiques-possibles-dans-ces-zones/",
+   "via": "scraper",
+   "fetched_at": "2026-08-27T21:57:56+01:00"
+  },
   {
    "date": "2026-08-27",
    "start": "09:30",
@@ -277,32 +316,6 @@
    "url": "https://news.gnet.tn/la-steg-anticipe-des-perturbations-electriques-avec-larrivee-dune-nouvelle-vague-de-chaleur/",
    "via": "scraper",
    "fetched_at": "2026-08-26T08:56:16+01:00"
-  },
-  {
-   "date": "2026-08-25",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité ce soir : voici la liste complète des zones concernées dans toute la Tunisie",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/25/coupures-delectricite-ce-soir-voici-la-liste-complete-des-zones-concernees-dans-toute-la-tunisie/",
-   "via": "scraper",
-   "fetched_at": "2026-08-25T20:42:54+01:00"
-  },
-  {
-   "date": "2026-08-25",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité : plusieurs zones du Grand Tunis concernées ce soir",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/25/coupures-delectricite-plusieurs-zones-du-grand-tunis-concernees-ce-soir/",
-   "via": "scraper",
-   "fetched_at": "2026-08-25T20:42:54+01:00"
   }
  ]
 }

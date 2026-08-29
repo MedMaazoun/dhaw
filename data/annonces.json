@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-28T18:28:39+01:00",
+ "generated_at": "2026-08-29T02:07:26+01:00",
  "items": [
+  {
+   "date": "2026-08-28",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : voici les zones concernées ce vendredi soir dans toute la Tunisie",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/28/coupures-delectricite-voici-les-zones-concernees-ce-vendredi-soir-dans-toute-la-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-08-29T02:07:26+01:00"
+  },
   {
    "date": "2026-08-28",
    "start": "09:00",
@@ -330,32 +343,6 @@
    "url": "https://news.gnet.tn/coupures-deau-et-delectricite-kais-saied-evoque-des-actes-de-sabotage-planifies/",
    "via": "scraper",
    "fetched_at": "2026-08-27T11:57:45+01:00"
-  },
-  {
-   "date": "2026-08-26",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Délestage tournant",
-   "titre": "Tunisie : la liste complète des régions concernées par les coupures d’électricité ce soir",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/26/tunisie-la-liste-complete-des-regions-concernees-par-les-coupures-delectricite-ce-soir/",
-   "via": "scraper",
-   "fetched_at": "2026-08-26T22:12:01+01:00"
-  },
-  {
-   "date": "2026-08-26",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Grand Tunis : liste des zones concernées par les coupures d’électricité ce soir",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/26/grand-tunis-liste-des-zones-concernees-par-les-coupures-delectricite-ce-soir/",
-   "via": "scraper",
-   "fetched_at": "2026-08-26T22:12:01+01:00"
   }
  ]
 }

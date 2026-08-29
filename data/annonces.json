@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-29T08:51:37+01:00",
+ "generated_at": "2026-08-29T14:40:16+01:00",
  "items": [
+  {
+   "date": "2026-08-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Nabeul : des milliers de volailles périssent sous l’effet de la chaleur et des coupures d’électricité",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/29/nabeul-des-milliers-de-volailles-perissent-sous-leffet-de-la-chaleur-et-des-coupures-delectricite/",
+   "via": "scraper",
+   "fetched_at": "2026-08-29T14:40:16+01:00"
+  },
   {
    "date": "2026-08-28",
    "start": "00:00",

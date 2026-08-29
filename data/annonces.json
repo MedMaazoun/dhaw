@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-08-29T14:40:16+01:00",
+ "generated_at": "2026-08-29T18:24:14+01:00",
  "items": [
+  {
+   "date": "2026-08-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Pourquoi : Toujours pas d’eau minérale",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/29/pourquoi-toujours-pas-deau-minerale/",
+   "via": "scraper",
+   "fetched_at": "2026-08-29T18:24:14+01:00"
+  },
+  {
+   "date": "2026-08-29",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "56 députés exigent la convocation d’une plénière extraordinaire face à la crise sociale que traverse le pays",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/29/56-deputes-exigent-la-convocation-dune-pleniere-extraordinaire-face-a-la-crise-sociale-que-traverse-le-pays/",
+   "via": "scraper",
+   "fetched_at": "2026-08-29T18:24:14+01:00"
+  },
   {
    "date": "2026-08-29",
    "start": "00:00",
@@ -328,32 +354,6 @@
    "ids": [],
    "source": "La Presse",
    "url": "https://www.lapresse.tn/2026/08/27/coupures-delectricite-la-liste-des-regions-concernees-dans-toute-la-tunisie/",
-   "via": "scraper",
-   "fetched_at": "2026-08-27T11:57:45+01:00"
-  },
-  {
-   "date": "2026-08-27",
-   "start": "09:30",
-   "end": "18:00",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’électricité dans le Grand Tunis : liste des régions concernées",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/27/coupures-delectricite-dans-le-grand-tunis-liste-des-regions-concernees/",
-   "via": "scraper",
-   "fetched_at": "2026-08-27T11:57:45+01:00"
-  },
-  {
-   "date": "2026-08-27",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’eau et d’électricité : Kaïs Saïed évoque des « actes de sabotage planifiés »",
-   "zones": "",
-   "ids": [],
-   "source": "Gnet",
-   "url": "https://news.gnet.tn/coupures-deau-et-delectricite-kais-saied-evoque-des-actes-de-sabotage-planifies/",
    "via": "scraper",
    "fetched_at": "2026-08-27T11:57:45+01:00"
   }

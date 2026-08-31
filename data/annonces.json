@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-31T17:12:33+01:00",
+ "generated_at": "2026-08-31T22:30:19+01:00",
  "items": [
+  {
+   "date": "2026-08-31",
+   "start": "20:00",
+   "end": "02:00",
+   "type": "Délestage tournant",
+   "titre": "Coupures d’électricité : La STEG annonce de nouvelles interruptions nocturnes",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-la-steg-annonce-de-nouvelles-interruptions-nocturnes/403302/",
+   "via": "scraper",
+   "fetched_at": "2026-08-31T22:30:19+01:00"
+  },
   {
    "date": "2026-08-31",
    "start": "13:00",

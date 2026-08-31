@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-08-31T02:51:45+01:00",
+ "generated_at": "2026-08-31T09:15:07+01:00",
  "items": [
+  {
+   "date": "2026-08-31",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Eau, électricité et pouvoir d’achat : le FTDES réclame des mesures urgentes",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/08/31/eau-electricite-et-pouvoir-dachat-le-ftdes-reclame-des-mesures-urgentes/",
+   "via": "scraper",
+   "fetched_at": "2026-08-31T09:15:07+01:00"
+  },
   {
    "date": "2026-08-29",
    "start": "00:00",

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-31T22:30:19+01:00",
+ "generated_at": "2026-09-01T01:46:36+01:00",
  "items": [
   {
    "date": "2026-08-31",
@@ -197,45 +197,6 @@
    "url": "https://www.lapresse.tn/2026/08/31/eau-electricite-et-pouvoir-dachat-le-ftdes-reclame-des-mesures-urgentes/",
    "via": "scraper",
    "fetched_at": "2026-08-31T09:15:07+01:00"
-  },
-  {
-   "date": "2026-08-29",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Pourquoi : Toujours pas d’eau minérale",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/29/pourquoi-toujours-pas-deau-minerale/",
-   "via": "scraper",
-   "fetched_at": "2026-08-29T18:24:14+01:00"
-  },
-  {
-   "date": "2026-08-29",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "56 députés exigent la convocation d’une plénière extraordinaire face à la crise sociale que traverse le pays",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/29/56-deputes-exigent-la-convocation-dune-pleniere-extraordinaire-face-a-la-crise-sociale-que-traverse-le-pays/",
-   "via": "scraper",
-   "fetched_at": "2026-08-29T18:24:14+01:00"
-  },
-  {
-   "date": "2026-08-29",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Nabeul : des milliers de volailles périssent sous l’effet de la chaleur et des coupures d’électricité",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/08/29/nabeul-des-milliers-de-volailles-perissent-sous-leffet-de-la-chaleur-et-des-coupures-delectricite/",
-   "via": "scraper",
-   "fetched_at": "2026-08-29T14:40:16+01:00"
   }
  ]
 }

@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-09-01T19:31:32+01:00",
+ "generated_at": "2026-09-01T22:18:59+01:00",
  "items": [
+  {
+   "date": "2026-09-01",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Eau minérale : quand les cafés et les salons de thé profitent de la pénurie pour faire flamber les prix",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/09/01/eau-minerale-quand-les-cafes-et-les-salons-de-the-profitent-de-la-penurie-pour-faire-flamber-les-prix/",
+   "via": "scraper",
+   "fetched_at": "2026-09-01T22:18:59+01:00"
+  },
   {
    "date": "2026-09-01",
    "start": "13:00",

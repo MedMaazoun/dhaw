@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-09-02T15:59:55+01:00",
+ "generated_at": "2026-09-02T19:34:50+01:00",
  "items": [
+  {
+   "date": "2026-09-02",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Délestages : les coupures vont-elles encore se poursuivre en Tunisie ?",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/09/02/delestages-les-coupures-vont-elles-encore-se-poursuivre-en-tunisie/",
+   "via": "scraper",
+   "fetched_at": "2026-09-02T19:34:50+01:00"
+  },
   {
    "date": "2026-09-02",
    "start": "00:00",

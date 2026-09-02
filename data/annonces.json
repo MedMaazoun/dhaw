@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-09-02T06:54:33+01:00",
+ "generated_at": "2026-09-02T11:50:32+01:00",
  "items": [
+  {
+   "date": "2026-09-02",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Pénuries d’eau et coupures de courant : La Tunisie face au risque d’une crise d’image ?",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/penuries-deau-et-coupures-de-courant-la-tunisie-face-au-risque-dune-crise-dimage/403386/",
+   "via": "scraper",
+   "fetched_at": "2026-09-02T11:50:32+01:00"
+  },
   {
    "date": "2026-09-01",
    "start": "00:00",

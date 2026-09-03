@@ -1,6 +1,45 @@
 {
- "generated_at": "2026-09-03T11:53:34+01:00",
+ "generated_at": "2026-09-03T15:53:50+01:00",
  "items": [
+  {
+   "date": "2026-09-03",
+   "start": "13:00",
+   "end": "17:00",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité ce jeudi : plusieurs régions concernées de 13h à 17h",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/09/03/coupures-delectricite-ce-jeudi-plusieurs-regions-concernees-de-13h-a-17h/",
+   "via": "scraper",
+   "fetched_at": "2026-09-03T15:53:50+01:00"
+  },
+  {
+   "date": "2026-09-03",
+   "start": "13:00",
+   "end": "17:00",
+   "type": "Coupure programmée",
+   "titre": "Grand Tunis : la STEG annonce des coupures d’électricité entre 13h et 17h",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/09/03/grand-tunis-la-steg-annonce-des-coupures-delectricite-entre-13h-et-17h/",
+   "via": "scraper",
+   "fetched_at": "2026-09-03T15:53:50+01:00"
+  },
+  {
+   "date": "2026-09-03",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Délestages électriques : le secteur des pâtisseries sous pression, jusqu’à 50 % de pertes pour les PME",
+   "zones": "",
+   "ids": [],
+   "source": "Gnet",
+   "url": "https://news.gnet.tn/delestages-electriques-le-secteur-des-patisseries-sous-pression-jusqua-50-de-pertes-pour-les-pme/",
+   "via": "scraper",
+   "fetched_at": "2026-09-03T15:53:50+01:00"
+  },
   {
    "date": "2026-09-02",
    "start": "20:00",

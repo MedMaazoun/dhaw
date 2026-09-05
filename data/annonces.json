@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-09-05T16:08:46+01:00",
+ "generated_at": "2026-09-05T18:20:26+01:00",
  "items": [
+  {
+   "date": "2026-09-05",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Choix présidentiel irréversible : Détermination à poursuivre la lutte contre la corruption",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/09/05/choix-presidentiel-irreversible-determination-a-poursuivre-la-lutte-contre-la-corruption/",
+   "via": "scraper",
+   "fetched_at": "2026-09-05T18:20:26+01:00"
+  },
+  {
+   "date": "2026-09-05",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Pourquoi : Responsabilité et conscience",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/09/05/pourquoi-responsabilite-et-conscience/",
+   "via": "scraper",
+   "fetched_at": "2026-09-05T18:20:26+01:00"
+  },
   {
    "date": "2026-09-03",
    "start": "13:00",

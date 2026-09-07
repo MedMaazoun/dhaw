@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-09-07T10:59:10+01:00",
+ "generated_at": "2026-09-07T16:44:30+01:00",
  "items": [
+  {
+   "date": "2026-09-07",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Tunisie : Des importations d’œufs à couver envisagées face aux pertes avicoles",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/tunisie-des-importations-doeufs-a-couver-envisagees-face-aux-pertes-avicoles/403672/",
+   "via": "scraper",
+   "fetched_at": "2026-09-07T16:44:30+01:00"
+  },
+  {
+   "date": "2026-09-07",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Filière avicole : le GIPAC clôture ce lundi la collecte des déclarations de pertes liées à la canicule",
+   "zones": "",
+   "ids": [],
+   "source": "Gnet",
+   "url": "https://news.gnet.tn/filiere-avicole-le-gipac-cloture-ce-lundi-la-collecte-des-declarations-de-pertes-liees-a-la-canicule/",
+   "via": "scraper",
+   "fetched_at": "2026-09-07T16:44:30+01:00"
+  },
   {
    "date": "2026-09-06",
    "start": "00:00",

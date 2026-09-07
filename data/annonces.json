@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-09-07T16:44:30+01:00",
+ "generated_at": "2026-09-07T20:24:58+01:00",
  "items": [
+  {
+   "date": "2026-09-07",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Élevage avicole : jusqu’à 100% de mortalité dans certaines unités après la vague de chaleur",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/09/07/elevage-avicole-jusqua-100-de-mortalite-dans-certaines-unites-apres-la-vague-de-chaleur/",
+   "via": "scraper",
+   "fetched_at": "2026-09-07T20:24:58+01:00"
+  },
   {
    "date": "2026-09-07",
    "start": "00:00",

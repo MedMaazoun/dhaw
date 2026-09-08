@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-09-08T06:07:00+01:00",
+ "generated_at": "2026-09-08T10:38:18+01:00",
  "items": [
+  {
+   "date": "2026-09-08",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Tunisie – Électricité : Va-t-on revivre le même été en 2027 ?",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/tunisie-electricite-va-t-on-revivre-le-meme-ete-en-2027/403696/",
+   "via": "scraper",
+   "fetched_at": "2026-09-08T10:38:18+01:00"
+  },
+  {
+   "date": "2026-09-08",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Canicule, coupures d’électricité et mortalité : L’aviculture tunisienne face à une crise",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/canicule-coupures-delectricite-et-mortalite-laviculture-tunisienne-face-a-une-crise-sans-precedent/403690/",
+   "via": "scraper",
+   "fetched_at": "2026-09-08T10:38:18+01:00"
+  },
   {
    "date": "2026-09-07",
    "start": "00:00",

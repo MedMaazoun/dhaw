@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-08T23:54:16+01:00",
+ "generated_at": "2026-09-09T02:04:46+01:00",
  "items": [
   {
    "date": "2026-09-08",
@@ -65,32 +65,6 @@
    "url": "https://news.gnet.tn/filiere-avicole-le-gipac-cloture-ce-lundi-la-collecte-des-declarations-de-pertes-liees-a-la-canicule/",
    "via": "scraper",
    "fetched_at": "2026-09-07T16:44:30+01:00"
-  },
-  {
-   "date": "2026-09-06",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Nabeul : un député appelle à indemniser les agriculteurs et entreprises touchés par les coupures d’électricité",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/09/06/nabeul-un-depute-appelle-a-indemniser-les-agriculteurs-et-entreprises-touches-par-les-coupures-delectricite/",
-   "via": "scraper",
-   "fetched_at": "2026-09-06T21:41:41+01:00"
-  },
-  {
-   "date": "2026-09-06",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Tunisie : vers un ajustement de la production avicole après les pertes de cet été",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/09/06/tunisie-vers-un-ajustement-de-la-production-avicole-apres-les-pertes-de-cet-ete/",
-   "via": "scraper",
-   "fetched_at": "2026-09-06T21:41:41+01:00"
   }
  ]
 }

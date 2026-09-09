@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-09T22:09:27+01:00",
+ "generated_at": "2026-09-10T00:14:49+01:00",
  "items": [
   {
    "date": "2026-09-08",
@@ -26,45 +26,6 @@
    "url": "https://www.webdo.tn/fr/actualite/national/canicule-coupures-delectricite-et-mortalite-laviculture-tunisienne-face-a-une-crise-sans-precedent/403690/",
    "via": "scraper",
    "fetched_at": "2026-09-08T10:38:18+01:00"
-  },
-  {
-   "date": "2026-09-07",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Élevage avicole : jusqu’à 100% de mortalité dans certaines unités après la vague de chaleur",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/09/07/elevage-avicole-jusqua-100-de-mortalite-dans-certaines-unites-apres-la-vague-de-chaleur/",
-   "via": "scraper",
-   "fetched_at": "2026-09-07T20:24:58+01:00"
-  },
-  {
-   "date": "2026-09-07",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Tunisie : Des importations d’œufs à couver envisagées face aux pertes avicoles",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/tunisie-des-importations-doeufs-a-couver-envisagees-face-aux-pertes-avicoles/403672/",
-   "via": "scraper",
-   "fetched_at": "2026-09-07T16:44:30+01:00"
-  },
-  {
-   "date": "2026-09-07",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Filière avicole : le GIPAC clôture ce lundi la collecte des déclarations de pertes liées à la canicule",
-   "zones": "",
-   "ids": [],
-   "source": "Gnet",
-   "url": "https://news.gnet.tn/filiere-avicole-le-gipac-cloture-ce-lundi-la-collecte-des-declarations-de-pertes-liees-a-la-canicule/",
-   "via": "scraper",
-   "fetched_at": "2026-09-07T16:44:30+01:00"
   }
  ]
 }

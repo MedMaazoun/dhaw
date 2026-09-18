@@ -1,31 +1,4 @@
 {
- "generated_at": "2026-09-18T22:55:36+01:00",
- "items": [
-  {
-   "date": "2026-09-16",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Coupures d’eau et d’électricité : Kaïs Saïed évoque un « crime »",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-deau-et-delectricite-kais-saied-evoque-un-crime/404099/",
-   "via": "scraper",
-   "fetched_at": "2026-09-16T07:10:04+01:00"
-  },
-  {
-   "date": "2026-09-16",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Kaïs Saïed évoque le projet de loi de finances 2027 et dénonce des « agissements criminels » derrière les coup",
-   "zones": "",
-   "ids": [],
-   "source": "Gnet",
-   "url": "https://news.gnet.tn/kais-saied-evoque-le-projet-de-loi-de-finances-2027-et-denonce-des-agissements-criminels-derriere-les-coupures-deau-et-delectricite-de-lete/",
-   "via": "scraper",
-   "fetched_at": "2026-09-16T07:10:04+01:00"
-  }
- ]
+ "generated_at": "2026-09-19T00:58:22+01:00",
+ "items": []
 }

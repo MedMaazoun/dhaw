@@ -1,18 +1,4 @@
 {
- "generated_at": "2026-09-21T21:34:00+01:00",
- "items": [
-  {
-   "date": "2026-09-19",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "A propos de… Nos festivals de l’été : Où est passé l’élan solidaire ?",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/09/19/a-propos-de-nos-festivals-de-lete-ou-est-passe-lelan-solidaire/",
-   "via": "scraper",
-   "fetched_at": "2026-09-19T19:43:36+01:00"
-  }
- ]
+ "generated_at": "2026-09-22T00:35:36+01:00",
+ "items": []
 }

@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-09-22T21:23:49+01:00",
+ "generated_at": "2026-09-23T00:10:15+01:00",
  "items": [
+  {
+   "date": "2026-09-22",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Filière textile: la production a baissé entre 40 à 60 % cet été à cause des coupures d’électricité",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/09/22/filiere-textile-la-production-a-baisse-entre-40-a-60-cet-ete-a-cause-des-coupures-delectricite/",
+   "via": "scraper",
+   "fetched_at": "2026-09-23T00:10:15+01:00"
+  },
   {
    "date": "2026-09-22",
    "start": "00:00",

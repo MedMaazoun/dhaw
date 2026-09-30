@@ -1,4 +1,18 @@
 {
- "generated_at": "2026-09-30T15:05:50+01:00",
- "items": []
+ "generated_at": "2026-09-30T20:14:31+01:00",
+ "items": [
+  {
+   "date": "2026-09-30",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Électricité : Le gouvernement anticipe déjà le risque de nouvelles coupures en 2027",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/electricite-le-gouvernement-anticipe-deja-le-risque-de-nouvelles-coupures-en-2027/404765/",
+   "via": "scraper",
+   "fetched_at": "2026-09-30T20:14:31+01:00"
+  }
+ ]
 }

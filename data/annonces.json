@@ -1,18 +1,4 @@
 {
- "generated_at": "2026-10-15T22:50:17+01:00",
- "items": [
-  {
-   "date": "2026-10-13",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Libye : Inondations à Tripoli, un mort recensé après de fortes pluies",
-   "zones": "",
-   "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/international/libye-inondations-frappent-tripoli-un-mort-recense-apres-de-fortes-pluies/405519/",
-   "via": "scraper",
-   "fetched_at": "2026-10-13T21:35:54+01:00"
-  }
- ]
+ "generated_at": "2026-10-16T01:07:28+01:00",
+ "items": []
 }

@@ -1,4 +1,18 @@
 {
- "generated_at": "2026-10-18T07:02:15+01:00",
- "items": []
+ "generated_at": "2026-10-18T11:57:39+01:00",
+ "items": [
+  {
+   "date": "2026-10-18",
+   "start": "08:00",
+   "end": "12:00",
+   "type": "Coupure programmée",
+   "titre": "Alerte STEG : coupure d’électricité programmée ce dimanche dans ces régions",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/10/18/alerte-steg-coupure-delectricite-programmee-ce-dimanche-dans-ces-regions/",
+   "via": "scraper",
+   "fetched_at": "2026-10-18T11:57:39+01:00"
+  }
+ ]
 }

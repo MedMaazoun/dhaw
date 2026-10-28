@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T20:21:51+01:00",
+ "generated_at": "2026-10-29T00:24:22+01:00",
  "items": [
   {
    "date": "2026-10-28",
@@ -26,19 +26,6 @@
    "url": "https://www.tunisie-tribune.com/2026/10/28/enquete-de-liace-sur-les-coupures-delectricite-ete-2026/",
    "via": "scraper",
    "fetched_at": "2026-10-28T14:51:57+01:00"
-  },
-  {
-   "date": "2026-10-26",
-   "start": "00:00",
-   "end": "23:59",
-   "type": "Coupure programmée",
-   "titre": "Eau, électricité : la Tunisie prépare l’été 2027",
-   "zones": "",
-   "ids": [],
-   "source": "La Presse",
-   "url": "https://www.lapresse.tn/2026/10/26/eau-electricite-la-tunisie-prepare-lete-2027/",
-   "via": "scraper",
-   "fetched_at": "2026-10-26T18:26:39+01:00"
   }
  ]
 }

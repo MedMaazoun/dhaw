@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-10-28T07:54:42+01:00",
+ "generated_at": "2026-10-28T14:51:57+01:00",
  "items": [
+  {
+   "date": "2026-10-28",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Enquête de l’IACE sur les coupures d’électricité – Été 2026",
+   "zones": "",
+   "ids": [],
+   "source": "Tunisie Tribune",
+   "url": "https://www.tunisie-tribune.com/2026/10/28/enquete-de-liace-sur-les-coupures-delectricite-ete-2026/",
+   "via": "scraper",
+   "fetched_at": "2026-10-28T14:51:57+01:00"
+  },
   {
    "date": "2026-10-26",
    "start": "00:00",

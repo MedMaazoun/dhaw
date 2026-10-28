@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-10-28T14:51:57+01:00",
+ "generated_at": "2026-10-28T20:21:51+01:00",
  "items": [
+  {
+   "date": "2026-10-28",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité en Tunisie : Les entreprises accusent 1,27 milliard de dinars de pertes en valeur ajout",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-en-tunisie-les-entreprises-accusent-127-milliard-de-dinars-de-pertes-en-valeur-ajoutee/406237/",
+   "via": "scraper",
+   "fetched_at": "2026-10-28T20:21:51+01:00"
+  },
   {
    "date": "2026-10-28",
    "start": "00:00",

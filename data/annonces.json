@@ -1,4 +1,18 @@
 {
- "generated_at": "2026-10-31T02:52:41+01:00",
- "items": []
+ "generated_at": "2026-10-31T09:05:52+01:00",
+ "items": [
+  {
+   "date": "2026-10-31",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures d’électricité en Tunisie : Lear comptabilise 8 millions de dollars de coûts",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-en-tunisie-lear-comptabilise-8-millions-de-dollars-de-couts/406367/",
+   "via": "scraper",
+   "fetched_at": "2026-10-31T09:05:52+01:00"
+  }
+ ]
 }

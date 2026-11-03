@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-02T19:42:34+01:00",
+ "generated_at": "2026-11-03T02:20:11+01:00",
  "items": [
   {
-   "date": "2026-10-31",
+   "date": "2026-11-02",
    "start": "00:00",
    "end": "23:59",
    "type": "Coupure programmée",
-   "titre": "Coupures d’électricité en Tunisie : Lear comptabilise 8 millions de dollars de coûts",
+   "titre": "Perturbations fréquentes de l’approvisionnement en eau et en électricité : Steg et Sonede, deux faces d’une mê",
    "zones": "",
    "ids": [],
-   "source": "Webdo",
-   "url": "https://www.webdo.tn/fr/actualite/national/coupures-delectricite-en-tunisie-lear-comptabilise-8-millions-de-dollars-de-couts/406367/",
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/11/02/perturbations-frequentes-de-lapprovisionnement-en-eau-et-en-electricite-steg-et-sonede-deux-faces-dune-meme-piece/",
    "via": "scraper",
-   "fetched_at": "2026-10-31T09:05:52+01:00"
+   "fetched_at": "2026-11-03T02:20:11+01:00"
   }
  ]
 }

@@ -1,4 +1,18 @@
 {
- "generated_at": "2026-11-11T09:07:15+01:00",
- "items": []
+ "generated_at": "2026-11-11T17:07:47+01:00",
+ "items": [
+  {
+   "date": "2026-11-11",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Eau et électricité : ce que le gouvernement prépare pour l’été 2027",
+   "zones": "",
+   "ids": [],
+   "source": "Gnet",
+   "url": "https://news.gnet.tn/eau-et-electricite-ce-que-le-gouvernement-prepare-pour-lete-2027/",
+   "via": "scraper",
+   "fetched_at": "2026-11-11T17:07:47+01:00"
+  }
+ ]
 }

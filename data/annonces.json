@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-11-13T08:15:10+01:00",
+ "generated_at": "2026-11-13T16:29:32+01:00",
  "items": [
+  {
+   "date": "2026-11-13",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Électricité : la Tunisie risque de ne pas achever ses projets avant l’été 2027, alerte un professionnel du sec",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/electricite-la-tunisie-risque-de-ne-pas-achever-ses-projets-avant-lete-2027-alerte-un-professionnel-du-secteur/407161/",
+   "via": "scraper",
+   "fetched_at": "2026-11-13T16:29:32+01:00"
+  },
   {
    "date": "2026-11-12",
    "start": "00:00",

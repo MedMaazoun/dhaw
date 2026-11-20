@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-11-20T16:36:02+01:00",
+ "generated_at": "2026-11-20T23:20:23+01:00",
  "items": [
+  {
+   "date": "2026-11-20",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Des industriels dénoncent le délestage électrique arbitraire de l’été 2026 : La Steg va-t-elle désamorcer sa c",
+   "zones": "",
+   "ids": [],
+   "source": "La Presse",
+   "url": "https://www.lapresse.tn/2026/11/20/des-industriels-denoncent-le-delestage-electrique-arbitraire-de-lete-2026-la-steg-va-t-elle-desamorcer-sa-crise/",
+   "via": "scraper",
+   "fetched_at": "2026-11-20T23:20:23+01:00"
+  },
   {
    "date": "2026-11-20",
    "start": "00:00",

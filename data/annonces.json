@@ -1,4 +1,18 @@
 {
- "generated_at": "2026-11-20T00:50:59+01:00",
- "items": []
+ "generated_at": "2026-11-20T07:10:09+01:00",
+ "items": [
+  {
+   "date": "2026-11-20",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Coupure programmée",
+   "titre": "Coupures électriques : Les industriels demandent un dispositif numérique d’alerte",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/national/coupures-electriques-les-industriels-demandent-un-dispositif-numerique-dalerte/407478/",
+   "via": "scraper",
+   "fetched_at": "2026-11-20T07:10:09+01:00"
+  }
+ ]
 }

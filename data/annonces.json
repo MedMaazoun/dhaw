@@ -1,4 +1,18 @@
 {
- "generated_at": "2026-11-25T06:40:59+01:00",
- "items": []
+ "generated_at": "2026-11-26T01:20:31+01:00",
+ "items": [
+  {
+   "date": "2026-11-25",
+   "start": "09:00",
+   "end": "14:00",
+   "type": "Coupure programmée",
+   "titre": "Djerba : Cinq heures de coupure d’électricité prévues jeudi dans six secteurs",
+   "zones": "",
+   "ids": [],
+   "source": "Webdo",
+   "url": "https://www.webdo.tn/fr/actualite/regions/djerba-cinq-heures-de-coupure-delectricite-prevues-jeudi-dans-six-secteurs/407696/",
+   "via": "scraper",
+   "fetched_at": "2026-11-26T01:20:31+01:00"
+  }
+ ]
 }

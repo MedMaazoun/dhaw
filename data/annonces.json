@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-11-26T09:45:40+01:00",
+ "generated_at": "2026-11-26T19:40:10+01:00",
  "items": [
+  {
+   "date": "2026-11-26",
+   "start": "00:00",
+   "end": "23:59",
+   "type": "Délestage tournant",
+   "titre": "Coupures : 8 exportateurs sur 10 privés de courant sans préavis",
+   "zones": "",
+   "ids": [],
+   "source": "Tunisie Tribune",
+   "url": "https://www.tunisie-tribune.com/2026/11/26/coupures-8-exportateurs-sur-10-prives-de-courant-sans-preavis/",
+   "via": "scraper",
+   "fetched_at": "2026-11-26T19:40:10+01:00"
+  },
   {
    "date": "2026-11-25",
    "start": "09:00",
